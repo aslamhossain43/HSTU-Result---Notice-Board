@@ -38,6 +38,38 @@
 	<c:if test="${userClickHome==true}">
 	<%@include file="home.jsp"%>
 	</c:if>
+	<!--  ag home page -->
+	<c:if test="${userClickAgeHome==true}">
+	<%@include file="ag-home.jsp"%>
+	</c:if>
+	<!-- cse home page -->
+	<c:if test="${userClickCseHome==true}">
+	<%@include file="cse-home.jsp"%>
+	</c:if>
+	<!--  bba home page -->
+	<c:if test="${userClickBbaHome==true}">
+	<%@include file="bba-home.jsp"%>
+	</c:if>
+	<!-- fis home page -->
+	<c:if test="${userClickFisHome==true}">
+	<%@include file="fis-home.jsp"%>
+	</c:if>
+	<!-- dvm home page -->
+	<c:if test="${userClickDvmHome==true}">
+	<%@include file="dvm-home.jsp"%>
+	</c:if>
+	<!-- eng home page -->
+	<c:if test="${userClickEngHome==true}">
+	<%@include file="eng-home.jsp"%>
+	</c:if>
+	<!-- sc home page -->
+	<c:if test="${userClickScHome==true}">
+	<%@include file="sc-home.jsp"%>
+	</c:if>
+	<!-- soc home page -->
+	<c:if test="${userClickSocHome==true}">
+	<%@include file="soc-home.jsp"%>
+	</c:if>
 	<!--footer -->
 	<%@include file="./shared/footer.jsp"%>
 
