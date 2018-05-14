@@ -3,7 +3,15 @@
         <div class="row">
 
            <!-- side bar -->
-           <%@include file="./shared/side-bar.jsp" %>
+           <div class="col-md-3">
+              
+                <div class="list-group">
+                    <a href="" class="list-group-item">Results of Agriculture Faculty</a>
+                    <a href="" class="list-group-item">Notices of Agriculture Faculty</a>
+                   
+                
+                </div>
+            </div>
            
 
             <div class="col-md-9">
