@@ -6,8 +6,8 @@
            <div class="col-md-3">
               
                 <div class="list-group">
-                    <a href="" class="list-group-item">Results of CSE Faculty</a>
-                    <a href="" class="list-group-item">Notices of CSE Faculty</a>
+                    <a href="${contextRoot}/cse/results" class="list-group-item">Results of CSE Faculty</a>
+                    <a href="${contextRoot}/cse/notices" class="list-group-item">Notices of CSE Faculty</a>
                    
                 
                 </div>

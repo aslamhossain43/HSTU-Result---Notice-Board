@@ -6,8 +6,8 @@
            <div class="col-md-3">
               
                 <div class="list-group">
-                    <a href="" class="list-group-item">Results of BBA Faculty</a>
-                    <a href="" class="list-group-item">Notices of BBA Faculty</a>
+                    <a href="${contextRoot}/bba/results" class="list-group-item">Results of BBA Faculty</a>
+                    <a href="${contextRoot}/bba/notices" class="list-group-item">Notices of BBA Faculty</a>
                    
                 
                 </div>

@@ -70,6 +70,91 @@
 	<c:if test="${userClickSocHome==true}">
 	<%@include file="soc-home.jsp"%>
 	</c:if>
+	
+	<!-- ag result  -->
+	<c:if test="${userClickAgResults==true}">
+	<%@include file="ag-results.jsp"%>
+	</c:if>
+	<!-- ag notices  -->
+	<c:if test="${userClickAgNotices==true}">
+	<%@include file="ag-notices.jsp"%>
+	</c:if>
+	
+	<!-- bba results -->
+	<c:if test="${userClickBbaResults==true}">
+	<%@include file="bba-results.jsp" %>
+	</c:if>
+	<!-- bba notices -->
+	<c:if test="${userClickBbaNotices==true}">
+	<%@include file="bba-notices.jsp" %>
+	</c:if>
+	
+	<!-- cse results -->
+	<c:if test="${userClickCseResults==true}">
+	<%@include file="cse-results.jsp" %>
+	</c:if>
+	<!-- cse notices -->
+	<c:if test="${userClickCseNotices==true}">
+	<%@include file="cse-notices.jsp" %>
+	</c:if>
+	
+	<!-- dvm results -->
+	<c:if test="${userClickDvmResults==true}">
+	<%@include file="dvm-results.jsp" %>
+	</c:if>
+	<!-- dvm notices -->
+	<c:if test="${userClickDvmNotices==true}">
+	<%@include file="dvm-notices.jsp" %>
+	</c:if>
+	<!-- eng results -->
+	<c:if test="${userClickEngResults==true}">
+	<%@include file="eng-results.jsp" %>
+	</c:if>
+	<!-- eng notices -->
+	<c:if test="${userClickEngNotices==true}">
+	<%@include file="eng-notices.jsp" %>
+	</c:if>
+	
+	<!-- fis results -->
+	<c:if test="${userClickFisResults==true}">
+	<%@include file="fis-results.jsp" %>
+	</c:if>
+	<!-- dvm notices -->
+	<c:if test="${userClickFisNotices==true}">
+	<%@include file="fis-notices.jsp" %>
+	</c:if>
+	
+	<!-- sc results -->
+	<c:if test="${userClickScResults==true}">
+	<%@include file="sc-results.jsp" %>
+    </c:if>
+	<!-- sc notices -->
+	<c:if test="${userClickScNotices==true}">
+	<%@include file="sc-notices.jsp" %>
+    </c:if>
+	<!-- so results -->
+	<c:if test="${userClickSoResults==true}">
+	<%@include file="soc-results.jsp" %>
+	</c:if>
+	
+	<!-- so notices -->
+	<c:if test="${userClickSoNotices==true}">
+	<%@include file="soc-notices.jsp" %>
+	</c:if>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<!--footer -->
 	<%@include file="./shared/footer.jsp"%>
 
