@@ -102,5 +102,11 @@ public class PageController {
 		return mv;
 
 	}
-
+@RequestMapping("/global_manage")
+public ModelAndView global_manage() {
+	
+	ModelAndView mv=new ModelAndView("page");
+	mv.addObject("clickGlobalManage", true);
+	return mv;
+}
 }

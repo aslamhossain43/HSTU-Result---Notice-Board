@@ -145,16 +145,17 @@
 	<!-- signup -->
 	<c:if test="${clickSignup==true}">
 	<%@include file="signup.jsp" %>
-	
-	</c:if>
+     </c:if>
+     
 	<!-- login -->
 	<c:if test="${clickLogin==true}">
 	<%@include file="login.jsp" %>	
+     </c:if>
 	
+	<!-- global manage -->
+	<c:if test="${clickGlobalManage==true}">
+	<%@include file="global-manage.jsp" %>
 	</c:if>
-	
-	
-	
 	
 	
 	
