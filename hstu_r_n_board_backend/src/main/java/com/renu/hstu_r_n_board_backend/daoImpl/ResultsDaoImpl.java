@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.renu.hstu_r_n_board_backend.dao.ResultsDao;
-import com.renu.hstu_r_n_board_backend.dto.Results;
+import com.renu.hstu_r_n_board_backend.dto.Ag_Results;
 @Repository("resultsDao")
 @Transactional
 public class ResultsDaoImpl implements ResultsDao{
@@ -16,7 +16,7 @@ public class ResultsDaoImpl implements ResultsDao{
 	
 	
 	@Override
-	public boolean addResults(Results results) {
+	public boolean addResults(Ag_Results results) {
 		try {
 			sessionFactory.getCurrentSession().persist(results);
 			return true;

@@ -6,7 +6,7 @@
 <div class="row">
 <!-- this is for message  -->
 <div class="col-md-offset-2 col-md-8">
-<div class="alert alert-info fade in">${message}</div>
+<div class="alert alert-danger fade in">${message}</div>
 </div>
 </div>
 </c:if>

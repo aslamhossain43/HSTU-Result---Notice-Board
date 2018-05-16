@@ -30,9 +30,17 @@ public class SignupAndLoginController {
 			return "page";
 
 		} else {
+			if( registration.getPassword().equals(registration.getConfirm_password())) {
 			registrationDao.addRegistration(registration);
-			
 			return "redirect:/home";
+			}else {
+				 model.addAttribute("clickSignup", true);
+					model.addAttribute("message", "Failed Registration ! Correct password & confirm password ");
+					//here if use redirect the validation will not work
+					return "page";
+				
+			}
+			
 		}
 	}
 

@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -32,16 +34,16 @@ public class Registration implements Serializable {
 	@NotBlank(message="Please enter last name !")
 	private String last_name;
 	@Column(name="phone")
-	@NotBlank(message="Please enter phone")
+	@Size(min=11,max=11,message="Please enter accurate phone !")
 	private String phone;
 	@Column(name="email")
-	@NotBlank(message="Please enter email")
+	@NotBlank(message="Please enter email !")
 	private String email;
 	@Column(name="password")
-	@NotBlank(message="Please enter password")
+	@NotBlank(message="Please enter password !")
 	private String password;
 	@Column(name="confirm_password")
-	@NotBlank(message="Please confirm your password")
+	@NotBlank(message="Please confirm your password !")
 	private String confirm_password;
 	public int getId() {
 		return id;

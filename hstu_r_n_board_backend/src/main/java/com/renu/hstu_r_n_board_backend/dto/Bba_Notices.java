@@ -10,41 +10,55 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.web.multipart.MultipartFile;
 
 
+
 @Entity
-@Table(name="results")
-public class Results implements Serializable {
-    
+@Table(name = "bba_notices")
+public class Bba_Notices implements Serializable{
+
+	
+	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(name = "description")
+	private String description;
 	@Transient
-	@Column(name="img_url")
-	@NotEmpty(message="Please upload a file")
+	@Column(name = "img_url")
+	@NotBlank(message = "Please upload a file !")
 	private MultipartFile img_url;
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 	public MultipartFile getImg_url() {
 		return img_url;
 	}
+
 	public void setImg_url(MultipartFile img_url) {
 		this.img_url = img_url;
 	}
-	
-	
-	
-	
+
 	
 	
 }

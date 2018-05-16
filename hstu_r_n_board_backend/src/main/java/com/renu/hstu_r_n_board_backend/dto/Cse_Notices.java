@@ -14,21 +14,24 @@ import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.web.multipart.MultipartFile;
 
 @Entity
-@Table(name="notices")
-public class Notices implements Serializable{
-    
+@Table(name = "cse_notices")
+public class Cse_Notices implements Serializable{
+
+	
+	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
+	@Column(name = "description")
+	private String description;
 	@Transient
-	@Column(name="img_url")
-	@NotBlank(message="Please upload a file")
+	@Column(name = "img_url")
+	@NotBlank(message = "Please upload a file !")
 	private MultipartFile img_url;
 
 	public int getId() {
@@ -39,6 +42,14 @@ public class Notices implements Serializable{
 		this.id = id;
 	}
 
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 	public MultipartFile getImg_url() {
 		return img_url;
 	}
@@ -46,7 +57,6 @@ public class Notices implements Serializable{
 	public void setImg_url(MultipartFile img_url) {
 		this.img_url = img_url;
 	}
-	
-	
+
 	
 }

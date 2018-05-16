@@ -5,12 +5,12 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.renu.hstu_r_n_board_backend.dao.ResultsDao;
-import com.renu.hstu_r_n_board_backend.dto.Results;
+import com.renu.hstu_r_n_board_backend.dto.Ag_Results;
 
 public class ResultsTest {
   private static AnnotationConfigApplicationContext context;
   private static ResultsDao resultsDao;
-  private Results results=null;
+  private Ag_Results results=null;
 	
 	
 	
@@ -26,7 +26,7 @@ public class ResultsTest {
 	}
 	@Test
 	public void testResults() {
-		results=new Results();
+		results=new Ag_Results();
 		
 		
 	}
