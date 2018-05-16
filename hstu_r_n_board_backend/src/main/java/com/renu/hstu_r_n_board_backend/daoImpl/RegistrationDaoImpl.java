@@ -7,8 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.renu.hstu_r_n_board_backend.dao.RegistrationDao;
 import com.renu.hstu_r_n_board_backend.dto.Registration;
-
-@Repository("registrationDao")
+//this will be same as in frontend controller if autowire
+@Repository
 @Transactional
 public class RegistrationDaoImpl implements RegistrationDao {
 	@Autowired

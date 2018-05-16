@@ -12,11 +12,15 @@
 
 
 
-
 <!-- base package scan -->
 	<context:component-scan
 		base-package="com.renu.hstu_r_n_board"></context:component-scan>
-		<mvc:annotation-driven />
+	<context:component-scan
+		base-package="com.renu.hstu_r_n_board_backend"></context:component-scan>
+		<mvc:annotation-driven/>
+		
+		
+		
 		
 		<!-- id must be multipartResolver otherwise it will not act...tihs is for file upload  -->
 	<bean id="multipartResolver"

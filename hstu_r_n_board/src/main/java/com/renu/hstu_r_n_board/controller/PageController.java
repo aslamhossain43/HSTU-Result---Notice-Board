@@ -1,8 +1,14 @@
 package com.renu.hstu_r_n_board.controller;
 
+import java.util.Map;
+
+import javax.enterprise.inject.New;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.renu.hstu_r_n_board_backend.dto.Registration;
 
 @Controller
 public class PageController {
@@ -77,6 +83,24 @@ public class PageController {
 		mv.addObject("userClickSocHome", true);
 		mv.addObject("title", "Sciology");
 		return mv;
+	}
+
+	@RequestMapping(value = { "/signup" })
+	public ModelAndView signup(Map<String,Object>map) {
+		map.put("registration", new Registration());
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("clickSignup", true);
+
+		return mv;
+
+	}
+
+	@RequestMapping(value = "/login")
+	public ModelAndView login() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("clickLogin", true);
+		return mv;
+
 	}
 
 }

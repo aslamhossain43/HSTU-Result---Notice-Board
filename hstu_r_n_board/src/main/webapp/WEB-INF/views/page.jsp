@@ -142,10 +142,16 @@
 	<%@include file="soc-notices.jsp" %>
 	</c:if>
 	
+	<!-- signup -->
+	<c:if test="${clickSignup==true}">
+	<%@include file="signup.jsp" %>
 	
+	</c:if>
+	<!-- login -->
+	<c:if test="${clickLogin==true}">
+	<%@include file="login.jsp" %>	
 	
-	
-	
+	</c:if>
 	
 	
 	

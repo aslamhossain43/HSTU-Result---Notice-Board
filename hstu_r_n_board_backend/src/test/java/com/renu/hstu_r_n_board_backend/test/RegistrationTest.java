@@ -10,11 +10,11 @@ import com.renu.hstu_r_n_board_backend.dao.RegistrationDao;
 import com.renu.hstu_r_n_board_backend.dto.Registration;
 
 public class RegistrationTest {
-    private static AnnotationConfigApplicationContext context;
+   /* private static AnnotationConfigApplicationContext context;
     private static RegistrationDao registrationDao;
     private Registration registration=null;
-	
-    
+	*/
+  /*  
     @BeforeClass
 	public static void init() {
 		context=new AnnotationConfigApplicationContext();
@@ -37,6 +37,6 @@ public class RegistrationTest {
 		registration.setConfirm_password("123");
 		assertEquals("Failed !",true,registrationDao.addRegistration(registration));
 	}
-	
+	*/
 	
 }

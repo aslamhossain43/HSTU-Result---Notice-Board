@@ -17,6 +17,16 @@
 
   <dependencies>
   
+  <!-- backend to frontend connection -->
+  <dependency>
+  
+   <groupId>com.renu</groupId>
+  <artifactId>hstu_r_n_board_backend</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  </dependency>
+  
   <!-- for unit test -->
     <dependency>
       <groupId>junit</groupId>
