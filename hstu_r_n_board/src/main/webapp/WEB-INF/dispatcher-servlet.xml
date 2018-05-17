@@ -21,6 +21,16 @@
 		
 		
 		
+			<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+		
+		</bean>
+		
+		
+		
+		
 		
 		<!-- id must be multipartResolver otherwise it will not act...tihs is for file upload  -->
 	<bean id="multipartResolver"
@@ -32,11 +42,6 @@
 		
 		
 		
-			<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/views/" />
-		<property name="suffix" value=".jsp" />
 		
-		</bean>
 		
 		</beans>

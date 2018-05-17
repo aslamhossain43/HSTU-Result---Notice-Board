@@ -157,6 +157,159 @@
 	<%@include file="global-manage.jsp" %>
 	</c:if>
 	
+	<!-- globalAgManage -->
+	<c:if test="${clickGlobalAgManage==true}">
+	<%@include file="global-ag-manage.jsp" %>
+	</c:if>
+	
+	<!-- global cse manage -->
+	<c:if test="${clickGlobalCseManage==true}">
+	<%@include file="global-cse-manage.jsp" %>
+	
+	</c:if>
+	
+	<!-- global bba manage -->
+	<c:if test="${clickGlobalBbaManage==true}">
+	<%@include file="global-bba-manage.jsp" %>
+	
+	</c:if>
+	<!-- global fis manage -->
+	<c:if test="${clickGlobalFisManage==true}">
+	<%@include file="global-fis-manage.jsp" %>
+	
+	</c:if>
+	
+	<!-- global dvm manage -->
+	<c:if test="${clickGlobalDvmManage==true}">
+	<%@include file="global-dvm-manage.jsp" %>
+	
+	</c:if>
+	
+	<!-- global eng manage -->
+	<c:if test="${clickGlobalEngManage==true}">
+	<%@include file="global-eng-manage.jsp" %>
+	
+	</c:if>
+	
+	<!-- global sc manage -->
+	<c:if test="${clickGlobalScManage==true}">
+	<%@include file="global-sc-manage.jsp" %>
+	
+	</c:if>
+	
+	<!-- global soc manage -->
+	<c:if test="${clickGlobalSocManage==true}">
+	<%@include file="global-soc-manage.jsp" %>
+	
+	</c:if>
+	
+	
+	<!-- agManageResult -->
+	<c:if test="${agManageResults==true}">
+	<%@include file="ag-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!-- agManageNotices -->
+	<c:if test="${agManageNotices==true}">
+	<%@include file="ag-manage-notices.jsp" %>
+	</c:if>
+	
+	<!-- cseManageResult -->
+	<c:if test="${cseManageResults==true}">
+	<%@include file="cse-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!-- cseManageNotices -->
+	<c:if test="${cseManageNotices==true}">
+	<%@include file="cse-manage-notices.jsp" %>
+	</c:if>
+	
+	<!-- bbaManageResult -->
+	<c:if test="${bbaManageResults==true}">
+	<%@include file="bba-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!-- bbaManageNotices -->
+	<c:if test="${bbaManageNotices==true}">
+	<%@include file="bba-manage-notices.jsp" %>
+	</c:if>
+	
+	
+	<!-- fisManageResult -->
+	<c:if test="${fisManageResults==true}">
+	<%@include file="fis-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!-- fisManageNotices -->
+	<c:if test="${fisManageNotices==true}">
+	<%@include file="fis-manage-notices.jsp" %>
+	</c:if>
+	
+	
+	<!-- dvmManageResult -->
+	<c:if test="${dvmManageResults==true}">
+	<%@include file="dvm-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!-- dvmManageNotices -->
+	<c:if test="${dvmManageNotices==true}">
+	<%@include file="dvm-manage-notices.jsp" %>
+	</c:if>
+	
+	<!-- engManageResult -->
+	<c:if test="${engManageResults==true}">
+	<%@include file="eng-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!--engManageNotices -->
+	<c:if test="${engManageNotices==true}">
+	<%@include file="eng-manage-notices.jsp" %>
+	</c:if>
+	
+	
+	<!-- scManageResult -->
+	<c:if test="${scManageResults==true}">
+	<%@include file="sc-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!-- scManageNotices -->
+	<c:if test="${scManageNotices==true}">
+	<%@include file="sc-manage-notices.jsp" %>
+	</c:if>
+	
+	<!-- socManageResult -->
+	<c:if test="${socManageResults==true}">
+	<%@include file="soc-manage-results.jsp" %>
+	</c:if>
+	
+	
+	<!-- socManageNotices -->
+	<c:if test="${socManageNotices==true}">
+	<%@include file="soc-manage-notices.jsp" %>
+	</c:if>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

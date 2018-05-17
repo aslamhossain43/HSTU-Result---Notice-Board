@@ -1,6 +1,7 @@
 package com.renu.hstu_r_n_board_backend.dto;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,11 +27,21 @@ public class Eng_Results implements Serializable{
 	private int id;
 	@Column(name = "description")
 	private String description;
+	
+     private String img_url;
+	
 	@Transient
-	@Column(name = "img_url")
 	@NotEmpty(message = "Please upload a file !")
-	private MultipartFile img_url;
+	private MultipartFile file;
 
+	
+	public Eng_Results() {
+	this.img_url="PRD" + UUID.randomUUID().toString().substring(26).toUpperCase();
+	}
+	
+	
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -47,12 +58,24 @@ public class Eng_Results implements Serializable{
 		this.description = description;
 	}
 
-	public MultipartFile getImg_url() {
+	public String getImg_url() {
 		return img_url;
 	}
 
-	public void setImg_url(MultipartFile img_url) {
+	public void setImg_url(String img_url) {
 		this.img_url = img_url;
 	}
+
+	public MultipartFile getFile() {
+		return file;
+	}
+
+	public void setFile(MultipartFile file) {
+		this.file = file;
+	}
+
+	
+	
+	
 
 }
