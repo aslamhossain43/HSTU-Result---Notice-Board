@@ -2,6 +2,14 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <div class="container">
 <div class="row">
+
+<c:if test="${not empty message}">
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<div class="alert alert-info fade in">${message}</div>
+</div>
+</div>
+</c:if>
 <div class="col-md-10 col-md-offset-1">
 
 
@@ -15,7 +23,7 @@
 <sf:form class="form-horizontal" 
 modelAttribute="fismanagenotices"
  method="POST"
- action="${contextRoot}/fis/fisManageNotices"
+ action="${contextRoot}/fisManage/fisManageNotices"
   enctype="multipart/form-data">
 <div class="form-group">
 <label class="control-label col-md-2">Description</label>
@@ -29,8 +37,8 @@ modelAttribute="fismanagenotices"
 <div class="form-group">
 <label class="control-label col-md-2">Select a file</label>
 <div class="col-md-10">
-<sf:input path="img_url" type="file" class="form-control" placeholder="Select a File !"/>
-<sf:errors path="description" cssClass="help-block" element="em" />
+<sf:input path="file" type="file" class="form-control" placeholder="Select a File !"/>
+<sf:errors path="file" cssClass="help-block" element="em" />
 </div>
 </div>
 <div class="form-group">

@@ -11,9 +11,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
+@Component
 @Entity
 @Table(name = "eng_notices")
 public class Eng_Notices implements Serializable{
@@ -32,7 +32,6 @@ public class Eng_Notices implements Serializable{
      private String img_url;
 	
 	@Transient
-	@NotEmpty(message = "Please upload a file !")
 	private MultipartFile file;
 
 	

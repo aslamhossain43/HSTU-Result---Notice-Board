@@ -4,7 +4,7 @@
 <p class="lead">Manage Results & Notices</p>
 <div class="list-group">
 <a href="${contextRoot}/soc/socManageResults" class="list-group-item">Arts & Social Science Results</a>
-<a href="${contextRoot}/bba/bbaManageNotices" class="list-group-item">Arts & Social Science Notices</a>
+<a href="${contextRoot}/soc/socManageNotices" class="list-group-item">Arts & Social Science Notices</a>
 </div>
 </div>
 </div>
