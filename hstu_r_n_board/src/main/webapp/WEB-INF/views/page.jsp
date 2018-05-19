@@ -1,3 +1,4 @@
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <spring:url var="css" value="/assets/css" />
@@ -31,6 +32,13 @@
 </head>
 
 <body>
+
+ <!-- preLoader -->
+
+<div class="preLoader">	</div>
+
+ 
+<div class="wrapper">
 
 	<!-- navbar -->
 	<%@include file="./shared/navbar.jsp"%>
@@ -314,15 +322,24 @@
 	
 	
 	
-	
+
 	<!--footer -->
 	<%@include file="./shared/footer.jsp"%>
 
+
+
+
+
+
 	<!-- core js -->
 	<script src="${js}/jquery.js"></script>
+	<!-- custom js -->
+	<script src="${js}/myapp.js"></script>
+	
 	<!-- Bootstrap core js -->
 	<script src="${js}/bootstrap.js"></script>
-
+    
+</div>
 
 </body>
 
