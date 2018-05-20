@@ -39,7 +39,7 @@ public class Ag_Results implements Serializable {
 	
 	public Ag_Results() {
 		
-		
+		//UUID Universal Unique Identifier
 	this.img_url="PRD" + UUID.randomUUID().toString().substring(26).toUpperCase();
 	}
 	
@@ -80,12 +80,12 @@ public class Ag_Results implements Serializable {
 
 
 
-
+/*
 	@Override
 	public String toString() {
 		return "Ag_Results [id=" + id + ", description=" + description + ", img_url=" + img_url + "]";
 	}
-
+*/
 
 
 

@@ -1,4 +1,3 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <spring:url var="css" value="/assets/css" />
@@ -15,7 +14,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
 
 <title>HSTU ${title}</title>
 <script>
@@ -345,8 +344,10 @@ window.contextRoot='${contextRoot}';
 	<script src="${js}/bootstrap.js"></script>
     
     <!-- dataTable js -->
+    <!-- these serial must be followed to get actual result -->
+     <script  src="${js}/jquery.dataTables.min.js"></script>
     <script src="${js}/dataTables.bootstrap.js"></script>
-    <script  src="${js}/jquery.dataTables.min.js"></script>
+   
     
     <!-- custom js -->
 	<script src="${js}/myapp.js"></script>

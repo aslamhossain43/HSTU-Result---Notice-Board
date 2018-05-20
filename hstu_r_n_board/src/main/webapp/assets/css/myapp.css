@@ -30,6 +30,15 @@ body {
   width: 100%;
 }
 
+/*
+	custom styling
+*/
+
+.wrapper {	
+	min-height:100%;
+	position: relative;
+}
+
 .ratings {
   color: #d17581;
   padding-left: 10px;
