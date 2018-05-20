@@ -85,7 +85,7 @@
     </exclusions>
     </dependency>
     
-    <!-- commons logging -->
+    <!-- to convert object into json format needed libraries -->
     <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
@@ -96,8 +96,6 @@
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-annotations</artifactId>
     <version>${jackson.version}</version>
-    
-    
     </dependency>
     
     

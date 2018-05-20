@@ -1,18 +1,28 @@
 package com.renu.hstu_r_n_board.controller;
 
+import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.renu.hstu_r_n_board_backend.dao.NoticesDao;
+import com.renu.hstu_r_n_board_backend.dao.ResultsDao;
 import com.renu.hstu_r_n_board_backend.dto.Ag_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Ag_Results;
 
 @Controller
 @RequestMapping("/ag")
 public class AgController {
-
+   
+	@Autowired
+	private ResultsDao resultDao;
+	@Autowired
+	private NoticesDao noticesDao;
+	
 	@RequestMapping("/results")
 	public ModelAndView showAgResults() {
 		
@@ -49,6 +59,18 @@ public class AgController {
 		
 	}
 	
+	@RequestMapping("/all/results")
+	@ResponseBody
+	public List<Ag_Results>agAllResults(){
+		
+		return resultDao.agGetAllResults();
+	}
 	
+	@RequestMapping("/all/notices")
+	@ResponseBody
+	public List<Ag_Notices> agAllNotices(){
+		
+		return noticesDao.agGetAllNotices();
+	}
 	
 }

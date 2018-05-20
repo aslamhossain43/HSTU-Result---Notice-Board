@@ -14,17 +14,24 @@
 
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>HSTU ${title}</title>
+<script>
 
+window.contextRoot='${contextRoot}';
+
+
+</script>
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 <!-- css readable theme for font style -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
-
+<!-- dataTables bootstrap css -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 
@@ -333,12 +340,17 @@
 
 	<!-- core js -->
 	<script src="${js}/jquery.js"></script>
-	<!-- custom js -->
-	<script src="${js}/myapp.js"></script>
 	
 	<!-- Bootstrap core js -->
 	<script src="${js}/bootstrap.js"></script>
     
+    <!-- dataTable js -->
+    <script src="${js}/dataTables.bootstrap.js"></script>
+    <script  src="${js}/jquery.dataTables.min.js"></script>
+    
+    <!-- custom js -->
+	<script src="${js}/myapp.js"></script>
+	
 </div>
 
 </body>

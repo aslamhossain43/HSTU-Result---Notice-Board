@@ -10,11 +10,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
-import javax.validation.constraints.NotNull;
 
-import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 @Component
 @Entity
 @Table(name = "ag_results")
@@ -29,6 +29,7 @@ public class Ag_Results implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Column(name = "description")
+	
 	private String description;
 	
      private String img_url;
@@ -76,6 +77,20 @@ public class Ag_Results implements Serializable {
 	public void setFile(MultipartFile file) {
 		this.file = file;
 	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Ag_Results [id=" + id + ", description=" + description + ", img_url=" + img_url + "]";
+	}
+
+
+
+
+
+
 
 	
 	
