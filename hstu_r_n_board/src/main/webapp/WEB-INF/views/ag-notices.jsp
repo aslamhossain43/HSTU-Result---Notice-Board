@@ -3,7 +3,7 @@
 <div class="col-lg-10 col-lg-offset-1">
 <div class="container-fluid">
 <div class="table-responsive">
-<table id="agImgNotices" class="table table-striped table-bordered">
+<table id="imgrn" class="table table-striped table-bordered">
 
 <thead>
 <tr>

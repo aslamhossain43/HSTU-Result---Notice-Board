@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-@Component
+
 @Entity
 @Table(name = "ag_results")
 public class Ag_Results implements Serializable {

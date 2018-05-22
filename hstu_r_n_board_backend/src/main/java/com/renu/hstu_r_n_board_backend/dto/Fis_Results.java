@@ -11,9 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-@Component
+
 @Entity
 @Table(name = "fis_results")
 public class Fis_Results implements Serializable{

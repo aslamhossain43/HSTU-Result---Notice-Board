@@ -11,10 +11,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
-@Component
+
 @Entity
 @Table(name = "soc_results")
 public class Soc_Results implements Serializable{

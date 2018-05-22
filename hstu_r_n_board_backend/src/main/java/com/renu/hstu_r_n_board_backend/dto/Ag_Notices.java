@@ -13,7 +13,7 @@ import javax.persistence.Transient;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-@Component
+
 @Entity
 @Table(name = "ag_notices")
 public class Ag_Notices implements Serializable {

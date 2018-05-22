@@ -21,6 +21,7 @@
 
 window.contextRoot='${contextRoot}';
 
+window.jsonURL='${contextRoot}/${jsonURL}';
 
 </script>
 

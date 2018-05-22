@@ -45,6 +45,7 @@ public class Registration implements Serializable {
 	@Column(name="confirm_password")
 	@NotBlank(message="Please confirm your password !")
 	private String confirm_password;
+	private String role;
 	public int getId() {
 		return id;
 	}
@@ -87,10 +88,19 @@ public class Registration implements Serializable {
 	public void setConfirm_password(String confirm_password) {
 		this.confirm_password = confirm_password;
 	}
+	
+	
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
 	@Override
 	public String toString() {
 		return "Registration [id=" + id + ", first_name=" + first_name + ", last_name=" + last_name + ", phone=" + phone
-				+ ", email=" + email + ", password=" + password + ", confirm_password=" + confirm_password + "]";
+				+ ", email=" + email + ", password=" + password + ", confirm_password=" + confirm_password + ", role="
+				+ role + "]";
 	}
 	
 	

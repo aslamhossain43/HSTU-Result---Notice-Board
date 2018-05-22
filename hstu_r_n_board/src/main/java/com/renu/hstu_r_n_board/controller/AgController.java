@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -27,14 +28,16 @@ public class AgController {
 	public ModelAndView showAgResults() {
 		
 		ModelAndView mv=new ModelAndView("page");
+		mv.addObject("jsonURL", "ag/all/results");
 		mv.addObject("userClickAgResults", true);
 		return mv;
 		
 	}
 	@RequestMapping("/notices")
 	public ModelAndView showAgNotices() {
-		
+	
 		ModelAndView mv=new ModelAndView("page");
+		mv.addObject("jsonURL", "ag/all/notices");
 		mv.addObject("userClickAgNotices", true);
 		return mv;
 		
