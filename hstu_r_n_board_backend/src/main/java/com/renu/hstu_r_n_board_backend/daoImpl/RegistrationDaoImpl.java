@@ -27,4 +27,19 @@ public class RegistrationDaoImpl implements RegistrationDao {
 		}
 	}
 
+	@Override
+	public Registration getByEmail(String email) {
+		String getEmail="FROM Registration WHERE email=:email";
+		try {
+			return sessionFactory.getCurrentSession().
+					createQuery(getEmail, Registration.class)
+					.setParameter("email", email).getSingleResult();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
+
 }

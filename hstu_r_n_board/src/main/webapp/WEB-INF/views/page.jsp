@@ -161,12 +161,7 @@ window.jsonURL='${contextRoot}/${jsonURL}';
 	<c:if test="${clickSignup==true}">
 	<%@include file="signup.jsp" %>
      </c:if>
-     
-	<!-- login -->
-	<c:if test="${clickLogin==true}">
-	<%@include file="login.jsp" %>	
-     </c:if>
-	
+    
 	<!-- global manage -->
 	<c:if test="${clickGlobalManage==true}">
 	<%@include file="global-manage.jsp" %>

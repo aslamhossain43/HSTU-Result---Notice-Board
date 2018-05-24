@@ -20,7 +20,7 @@ import com.renu.hstu_r_n_board_backend.dto.Dvm_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Dvm_Results;
 
 @Controller
-@RequestMapping("/dvmManage")
+@RequestMapping("/manage")
 public class DvmManageController {
 
 	

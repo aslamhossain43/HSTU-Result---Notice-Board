@@ -14,8 +14,8 @@ import com.renu.hstu_r_n_board_backend.dao.RegistrationDao;
 import com.renu.hstu_r_n_board_backend.dto.Registration;
 
 @Controller
-@RequestMapping("/signup_login")
-public class SignupAndLoginController {
+@RequestMapping("/signup")
+public class SignupController {
 	@Autowired
 
 	private RegistrationDao registrationDao;
@@ -43,5 +43,14 @@ public class SignupAndLoginController {
 			
 		}
 	}
+	
+
+	
+	
+	
+	
+	
+	
+	
 
 }

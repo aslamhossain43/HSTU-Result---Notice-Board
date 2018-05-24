@@ -20,7 +20,7 @@ import com.renu.hstu_r_n_board_backend.dto.Sc_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Sc_Results;
 
 @Controller
-@RequestMapping("/scManage")
+@RequestMapping("/manage")
 public class ScManageController {
 
 	

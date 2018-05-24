@@ -20,7 +20,7 @@ import com.renu.hstu_r_n_board_backend.dto.Fis_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Fis_Results;
 
 @Controller
-@RequestMapping("/fisManage")
+@RequestMapping("/manage")
 public class FisManageController {
 
 	

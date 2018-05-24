@@ -19,7 +19,7 @@ import com.renu.hstu_r_n_board_backend.dao.ResultsDao;
 import com.renu.hstu_r_n_board_backend.dto.Bba_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Bba_Results;
 @Controller
-@RequestMapping("/bbaManage")
+@RequestMapping("/manage")
 public class BbaManageController {
 
 	

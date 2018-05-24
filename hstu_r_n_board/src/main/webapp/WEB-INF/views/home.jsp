@@ -5,14 +5,14 @@
             <div class="col-md-3">
                 <p class="lead">Faculty Name</p>
                 <div class="list-group">
-                    <a href="${contextRoot}/agHome" class="list-group-item">Agriculture</a>
-                    <a href="${contextRoot}/cseHome" class="list-group-item">Computer Science & Engineering</a>
-                    <a href="${contextRoot}/bbaHome" class="list-group-item">Business Studies</a>
-                    <a href="${contextRoot}/fisHome" class="list-group-item">Fisheries</a>
-                    <a href="${contextRoot}/dvmHome" class="list-group-item">Veterinary & Animal Science</a>
-                    <a href="${contextRoot}/engHome" class="list-group-item">Engineering</a>
-                    <a href="${contextRoot}/scHome" class="list-group-item">Science</a>
-                    <a href="${contextRoot}/socHome" class="list-group-item">Arts & Social Science</a>
+                    <a href="${contextRoot}/show/agHome" class="list-group-item">Agriculture</a>
+                    <a href="${contextRoot}/show/cseHome" class="list-group-item">Computer Science & Engineering</a>
+                    <a href="${contextRoot}/show/bbaHome" class="list-group-item">Business Studies</a>
+                    <a href="${contextRoot}/show/fisHome" class="list-group-item">Fisheries</a>
+                    <a href="${contextRoot}/show/dvmHome" class="list-group-item">Veterinary & Animal Science</a>
+                    <a href="${contextRoot}/show/engHome" class="list-group-item">Engineering</a>
+                    <a href="${contextRoot}/show/scHome" class="list-group-item">Science</a>
+                    <a href="${contextRoot}/show/socHome" class="list-group-item">Arts & Social Science</a>
                 
                 
                 </div>

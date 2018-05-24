@@ -2,10 +2,15 @@ package com.renu.hstu_r_n_board.controller;
 
 import java.util.Map;
 
-import javax.enterprise.inject.New;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.renu.hstu_r_n_board_backend.dto.Registration;
@@ -21,69 +26,7 @@ public class PageController {
 		return mv;
 	}
 
-	@RequestMapping(value = { "/agHome" })
-	public ModelAndView showAgeHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickAgeHome", true);
-		mv.addObject("title", "Agriculture");
-		return mv;
-	}
-
-	@RequestMapping(value = { "/cseHome" })
-	public ModelAndView showCseHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickCseHome", true);
-		mv.addObject("title", "CSE");
-		return mv;
-	}
-
-	@RequestMapping(value = { "/bbaHome" })
-	public ModelAndView showBbaHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickBbaHome", true);
-		mv.addObject("title", "BBA");
-		return mv;
-	}
-
-	@RequestMapping(value = { "/fisHome" })
-	public ModelAndView showFisHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickFisHome", true);
-		mv.addObject("title", "Fisheries");
-		return mv;
-	}
-
-	@RequestMapping(value = { "/dvmHome" })
-	public ModelAndView showDvmHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickDvmHome", true);
-		mv.addObject("title", "DVM");
-		return mv;
-	}
-
-	@RequestMapping(value = { "/engHome" })
-	public ModelAndView showEngHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickEngHome", true);
-		mv.addObject("title", "Engineering");
-		return mv;
-	}
-
-	@RequestMapping(value = { "/scHome" })
-	public ModelAndView showScHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickScHome", true);
-		mv.addObject("title", "Science");
-		return mv;
-	}
-
-	@RequestMapping(value = { "/socHome" })
-	public ModelAndView showSocHome() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("userClickSocHome", true);
-		mv.addObject("title", "Sciology");
-		return mv;
-	}
+	
 
 	@RequestMapping(value = { "/signup" })
 	public ModelAndView signup(Map<String,Object>map) {
@@ -95,13 +38,49 @@ public class PageController {
 
 	}
 
-	@RequestMapping(value = "/login")
-	public ModelAndView login() {
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("clickLogin", true);
-		return mv;
 
+//login must be url=${contextRoot}/login ,,otherwise this will not work fine
+
+@RequestMapping("/login")
+public ModelAndView logPage(@RequestParam(name="error",required=false)String error) {
+	
+	ModelAndView mv=new ModelAndView("login");
+	if(error!=null) {
+	mv.addObject("message", "Invalid email or Password");
 	}
+	return mv;
+	
+}
+
+@RequestMapping("/access-denied")
+public ModelAndView accessDenied() {
+	
+	ModelAndView mv=new ModelAndView("error");
+	mv.addObject("title", "403-Access-Denied");
+    mv.addObject("errorTitle","You are intercepted");
+    mv.addObject("errorDescription", "You are not authorized to view this page");
+	return mv;
+}
+
+
+
+@RequestMapping("/perform-logout")
+public String logout(HttpServletRequest request,HttpServletResponse response) {
+	
+	Authentication authentication=SecurityContextHolder.getContext().getAuthentication();
+	if(authentication!=null) {
+		
+		new SecurityContextLogoutHandler().logout(request, response, authentication);
+	}
+	
+	return "redirect:/login?logout";
+}
+
+
+
+
+
+
 @RequestMapping("/global_manage")
 public ModelAndView global_manage() {
 	
@@ -109,4 +88,15 @@ public ModelAndView global_manage() {
 	mv.addObject("clickGlobalManage", true);
 	return mv;
 }
+
+
+
+
+
+
+
+
+
+
+
 }

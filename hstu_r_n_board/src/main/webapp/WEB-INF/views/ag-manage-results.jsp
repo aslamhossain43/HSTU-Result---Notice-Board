@@ -24,7 +24,7 @@
 <sf:form class="form-horizontal" 
 modelAttribute="agmanageresults"
  method="POST"
- action="${contextRoot}/agManage/agManageResults"
+ action="${contextRoot}/manage/agManageResults"
   enctype="multipart/form-data">
 <div class="form-group">
 <label class="control-label col-md-2">Description</label>

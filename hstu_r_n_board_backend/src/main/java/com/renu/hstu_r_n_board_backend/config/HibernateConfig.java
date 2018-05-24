@@ -23,8 +23,8 @@ public class HibernateConfig {
 	private final static String DATABASE_USERNAME = "sa";
 	private final static String DATABASE_PASSWORD = "";
 
-	// here dataSorces name is used for spring security purpose,,,
-	@Bean
+	// here dataSorce name is used for spring security purpose,,,
+	@Bean("dataSource")
 	public DataSource getDataSources() {
 		BasicDataSource dataSource = new BasicDataSource();
 		

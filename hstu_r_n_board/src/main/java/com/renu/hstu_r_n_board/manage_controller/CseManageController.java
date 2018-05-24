@@ -20,7 +20,7 @@ import com.renu.hstu_r_n_board_backend.dto.Cse_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Cse_Results;
 
 @Controller
-@RequestMapping("/cseManage")
+@RequestMapping("/manage")
 public class CseManageController {
 
 	

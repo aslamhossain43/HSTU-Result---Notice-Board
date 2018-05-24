@@ -8,7 +8,7 @@ public interface RegistrationDao {
 
 	
 	boolean addRegistration(Registration registration);
-	
+	Registration getByEmail(String email);
 	
 	
 }

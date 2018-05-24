@@ -21,7 +21,7 @@
 <div class="panel-body">
 <sf:form class="form-horizontal"
  modelAttribute="registration" 
- action="${contextRoot}/signup_login/signup"
+ action="${contextRoot}/signup/signup"
   method="POST"
   id="signupForm"
   >

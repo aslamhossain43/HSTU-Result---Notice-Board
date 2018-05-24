@@ -8,7 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -45,6 +44,7 @@ public class Registration implements Serializable {
 	@Column(name="confirm_password")
 	@NotBlank(message="Please confirm your password !")
 	private String confirm_password;
+	private boolean enabled=true;
 	private String role;
 	public int getId() {
 		return id;
@@ -96,12 +96,19 @@ public class Registration implements Serializable {
 	public void setRole(String role) {
 		this.role = role;
 	}
+	public boolean isEnabled() {
+		return enabled;
+	}
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
 	@Override
 	public String toString() {
 		return "Registration [id=" + id + ", first_name=" + first_name + ", last_name=" + last_name + ", phone=" + phone
-				+ ", email=" + email + ", password=" + password + ", confirm_password=" + confirm_password + ", role="
-				+ role + "]";
+				+ ", email=" + email + ", password=" + password + ", confirm_password=" + confirm_password
+				+ ", enabled=" + enabled + ", role=" + role + "]";
 	}
+	
 	
 	
 	

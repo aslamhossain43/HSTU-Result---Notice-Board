@@ -20,7 +20,7 @@ import com.renu.hstu_r_n_board_backend.dto.Ag_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Ag_Results;
 
 @Controller
-@RequestMapping("/agManage")
+@RequestMapping("/manage")
 public class AgManageController {
 	private static final Logger logger=LoggerFactory.getLogger(AgManageController.class);
 	

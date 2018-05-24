@@ -20,7 +20,7 @@ import com.renu.hstu_r_n_board_backend.dto.Eng_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Eng_Results;
 
 @Controller
-@RequestMapping("/engManage")
+@RequestMapping("/manage")
 public class EngManageController {
 
 	

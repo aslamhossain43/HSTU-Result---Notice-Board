@@ -20,7 +20,7 @@ import com.renu.hstu_r_n_board_backend.dto.Soc_Notices;
 import com.renu.hstu_r_n_board_backend.dto.Soc_Results;
 
 @Controller
-@RequestMapping("/socManage")
+@RequestMapping("/manage")
 public class SocManageController {
 
 	
