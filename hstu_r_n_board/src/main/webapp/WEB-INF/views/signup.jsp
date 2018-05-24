@@ -1,6 +1,6 @@
 <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@taglib prefix="security"  uri="http://www.springframework.org/security/tags" %>
 <div class="container">
 <c:if test="${not empty message}">
 <div class="row">
@@ -87,6 +87,21 @@
 <div class="col-md-8">
 <sf:input type="password" path="confirm_password" class="form-control" placeholder="Confirm Password"/>
 <sf:errors path="confirm_password" cssClass="help-block" element="em"/>
+</div>
+
+
+</div>
+
+
+<div class="form-group">
+<label class="control-label col-md-4"> Select Role</label>
+<div class="col-md-8">
+<label class="radio-inline">
+<sf:radiobutton path="role" value="STUDENT" checked="checked"/>Student</label>
+<security:authorize access="hasAuthority('ADMIN')">
+<label class="radio-inline"><sf:radiobutton path="role" value="ADMIN"/>Admin</label>
+</security:authorize>
+
 </div>
 
 

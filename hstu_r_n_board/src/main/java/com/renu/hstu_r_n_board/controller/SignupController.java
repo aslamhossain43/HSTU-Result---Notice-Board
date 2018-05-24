@@ -16,10 +16,15 @@ import com.renu.hstu_r_n_board_backend.dto.Registration;
 @Controller
 @RequestMapping("/signup")
 public class SignupController {
+	
 	@Autowired
 
 	private RegistrationDao registrationDao;
-
+     
+	
+	
+	
+	
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public String signup(@Valid @ModelAttribute("registration") Registration registration, BindingResult bindingResult,
 			Model model) {
