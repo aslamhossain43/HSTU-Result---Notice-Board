@@ -137,7 +137,9 @@ New : <a href="${contextRoot}/signup">Sign up</a>
 	<%@include file="./shared/footer.jsp"%>
     <!-- core js -->
 	<script src="${js}/jquery.js"></script>
+	<!-- jquery validate -->
 	
+	<script src="${js}/jquery.validate.js"></script>
 	<!-- Bootstrap core js -->
 	<script src="${js}/bootstrap.js"></script>
     

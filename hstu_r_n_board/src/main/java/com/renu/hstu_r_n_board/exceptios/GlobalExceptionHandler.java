@@ -22,6 +22,7 @@ public class GlobalExceptionHandler {
 		
 	}
 	
+	//global default exception handle
 	@ExceptionHandler(Exception.class)
 	public ModelAndView handlerException(Exception e) {
 		

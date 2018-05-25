@@ -139,7 +139,7 @@ $(function() {
 	}
 	
 	//loginForm
-	/*
+	
 	var $loginForm = $('#loginForm');
 
 	if ($loginForm.length) {
@@ -176,10 +176,16 @@ $(function() {
 
 	}
 
-	*/
+
+	//called method
 	
-	
-	
+	function errorPlacement(error,element){
+		//for css coloring
+		error.addClass("help-block");
+		//show error msg below the label
+		error.insertAfter(element);
+		element.parents(".validate").addClass("has-feedback");
+	}
 	
 	
 	
