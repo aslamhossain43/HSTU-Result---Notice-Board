@@ -3,6 +3,7 @@ package com.renu.hstu_r_n_board.controller;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,7 +21,8 @@ public class SignupController {
 	@Autowired
 
 	private RegistrationDao registrationDao;
-     
+     @Autowired
+     private BCryptPasswordEncoder passwordEncoder;
 	
 	
 	
@@ -36,7 +38,10 @@ public class SignupController {
 
 		} else {
 			if( registration.getPassword().equals(registration.getConfirm_password())) {
-			registrationDao.addRegistration(registration);
+				//before sending value encoding first
+			   registration.setPassword(passwordEncoder.encode(registration.getPassword()));
+			   registration.setConfirm_password(passwordEncoder.encode(registration.getConfirm_password()));
+				registrationDao.addRegistration(registration);
 			return "redirect:/home";
 			}else {
 				 model.addAttribute("clickSignup", true);
