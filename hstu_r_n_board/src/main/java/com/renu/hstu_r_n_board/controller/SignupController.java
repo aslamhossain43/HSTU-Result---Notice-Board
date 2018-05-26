@@ -38,10 +38,12 @@ public class SignupController {
 
 		} else {
 			if( registration.getPassword().equals(registration.getConfirm_password())) {
+				
 				//before sending value encoding first
 			   registration.setPassword(passwordEncoder.encode(registration.getPassword()));
 			   registration.setConfirm_password(passwordEncoder.encode(registration.getConfirm_password()));
-				registrationDao.addRegistration(registration);
+				
+			   registrationDao.addRegistration(registration);
 			return "redirect:/home";
 			}else {
 				 model.addAttribute("clickSignup", true);
