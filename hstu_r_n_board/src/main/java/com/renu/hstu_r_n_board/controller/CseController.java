@@ -22,7 +22,7 @@ public class CseController {
 	@Autowired
 	private NoticesDao noticesDao;
 
-@RequestMapping("/results")
+	@RequestMapping("/results")
 public ModelAndView showCseResults() {
 	
 	ModelAndView mv=new ModelAndView("page");
@@ -44,7 +44,7 @@ public ModelAndView showCseNotices() {
 	
 @RequestMapping("/cseManageResults")
 public ModelAndView showCseManageResults(Map<String,Object>map) {
-	//string must be as lioke as modelAttribue and small letters
+	//string must be as like as model attribute and small letters
 	map.put("csemanageresults",new Cse_Results());
 	ModelAndView mv=new ModelAndView("page");
 	mv.addObject("cseManageResults",true);
@@ -66,6 +66,7 @@ public ModelAndView showCseManageNotices(Map<String,Object>map) {
 @RequestMapping("/all/results")
 @ResponseBody
 public List<Cse_Results>cseAllResults(){
+	
 	
 	return resultDao.cseGetAllResults();
 }

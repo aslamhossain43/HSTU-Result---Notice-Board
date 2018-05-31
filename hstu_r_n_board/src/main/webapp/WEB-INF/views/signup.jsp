@@ -98,9 +98,9 @@
 <div class="col-md-8">
 <label class="radio-inline">
 <sf:radiobutton path="role" value="STUDENT" checked="checked"/>Student</label>
-<security:authorize access="hasAuthority('ADMIN')">
+
 <label class="radio-inline"><sf:radiobutton path="role" value="ADMIN"/>Admin</label>
-</security:authorize>
+
 
 </div>
 

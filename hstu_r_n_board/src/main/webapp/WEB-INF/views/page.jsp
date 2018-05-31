@@ -306,8 +306,12 @@ window.jsonURL='${contextRoot}/${jsonURL}';
 	</c:if>
 	
 	
+	<!-- ece l1s1 -->
+	<c:if test="${eceL1S1Form==true}">
+	<%@include file="./flows/results/manage-ecel1s1enter.jsp" %>
 	
 	
+	</c:if>
 	
 	
 	
