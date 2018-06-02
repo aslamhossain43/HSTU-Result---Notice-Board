@@ -119,24 +119,17 @@ $(function() {
 		
 	});
 	}
-//for accessing ECE all results
+//for accessing ECE l1s1 results
 	
-	var $eceAllresults=$('#eceAllresults');
+	var $eceAllresults=$('#eceAllresultsl1s1');
 	
 	if($eceAllresults.length){
 		console.log('inside the table');
 		var jsonUrl='';
 		
 		
-		 switch(jsonURL){
-		case contextRoot+'/showEce/eceL1S1AllResults':
 			jsonUrl=contextRoot+'/jsonEce/allResultsL1S1';
-			break;
-		case contextRoot+'/showEce/eceL1S2AllResults':
-			jsonUrl=contextRoot+'/jsonEce/allResultsL1S2';
-			break;
-		
-		}
+			
 
 
 	
@@ -203,6 +196,88 @@ $(function() {
 		
 		
 	});
+	} 
+//for accessing ECE l1s2 results
+	
+	var $eceAllresults=$('#eceAllresultsl1s2');
+	
+	if($eceAllresults.length){
+		console.log('inside the table');
+		var jsonUrl='';
+		
+		
+	
+			jsonUrl=contextRoot+'/jsonEce/allResultsL1S2';
+			
+		 $eceAllresults.DataTable({
+			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
+			  pageLength:30,
+			  ajax:{
+				  url:jsonUrl,
+				  dataSrc : ''
+				 
+				  
+			  },
+			  columns : [
+				  
+				  {
+					data:'sid'  
+				  },
+				  
+				  
+				  {
+					  data:'aie110'
+					 
+					  
+					  
+				  },
+				  {
+					  data:'mat113'
+					 
+				  },
+				  {
+					  data:'ece101'
+					 
+				  },
+				  {
+					  data:'ece102'
+					 
+				  },
+				  {
+					  data:'eee103'
+					 
+				  },
+				  {
+					  data:'eee104'
+					 
+				  },
+				  {
+					  data:'soc105'
+					 
+				  },
+				  {
+					  data:'cse159'
+					 
+				  }, {
+					  data:'cse160'
+					 
+				  }, {
+					  data:'cse161'
+					 
+				  },
+				  {
+					  data:'gpa'
+					 
+				  }
+				  
+				  
+				  
+			  ]
+				
+				
+				
+				
+			});
 	}
 	
 	/*alert message*/

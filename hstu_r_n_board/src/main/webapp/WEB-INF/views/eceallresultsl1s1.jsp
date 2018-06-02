@@ -6,7 +6,7 @@
 <div class="col-lg-12">
 <div class="container-fluid">
 <div class="table-responsive">
-<table id="eceAllresults" class="table table-striped table-bordered">
+<table id="eceAllresultsl1s1" class="table table-striped table-bordered">
 
 <thead>
 <tr>

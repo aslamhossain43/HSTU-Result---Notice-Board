@@ -31,13 +31,13 @@ Electronics & Communication Engineering<span class="caret"></span>
 <ul class="dropdown-menu">
 
 <li><a href="${contextRoot}/showEce/eceL1S1Form">ECE L1 S1</a></li>
-<li><a>ECE L1 S2</a></li>
-<li><a>ECE L2 S1</a></li>
-<li><a>ECE L2 S2</a></li>
-<li><a>ECE L3 S1</a></li>
-<li><a>ECE L3 S2</a></li>
-<li><a>ECE L4 S1</a></li>
-<li><a>ECE L4 S2</a></li>
+<li><a href="${contextRoot}/showEce/eceL1S2Form">ECE L1 S2</a></li>
+<li><a href="${contextRoot}/showEce/eceL2S1Form">ECE L2 S1</a></li>
+<li><a href="${contextRoot}/showEce/eceL2S2Form">ECE L2 S2</a></li>
+<li><a href="${contextRoot}/showEce/eceL3S1Form">ECE L3 S1</a></li>
+<li><a href="${contextRoot}/showEce/eceL3S2Form">ECE L3 S2</a></li>
+<li><a href="${contextRoot}/showEce/eceL4S1Form">ECE L4 S1</a></li>
+<li><a href="${contextRoot}/showEce/eceL4S2Form">ECE L4 S2</a></li>
 
 </ul>
 </div>

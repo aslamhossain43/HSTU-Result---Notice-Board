@@ -169,16 +169,25 @@ window.heading='${heading}';
 	
 	<!-- ece l1s1 -->
 	<c:if test="${eceL1S1Form==true}">
-	<%@include file="./flows/results/manage-ecel1s1enter.jsp" %>
+	<%@include file="ecel1s1enter.jsp" %>
 	
 	
 	</c:if>
 	
-	<!-- ece all results -->
-	<c:if test="${eceAllResults==true}">
-	<%@include file="eceallresults.jsp" %>
+	<!-- ece l1s2 -->
+	<c:if test="${eceL1S2Form==true}">
+	<%@include file="ecel1s2enter.jsp" %>
 	
 	
+	</c:if>
+	
+	<!-- ece l1s1 results -->
+	<c:if test="${eceAllResultsl1s1==true}">
+	<%@include file="eceallresultsl1s1.jsp" %>
+	</c:if>
+	<!-- ece l1s2 results -->
+	<c:if test="${eceAllResultsl1s2==true}">
+	<%@include file="eceallresultsl1s2.jsp" %>
 	</c:if>
 	
 	
