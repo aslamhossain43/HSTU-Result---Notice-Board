@@ -21,8 +21,9 @@
 
 window.contextRoot='${contextRoot}';
 
-window.jsonURL='${contextRoot}/${jsonURL}';
-
+window.filejsonURL='${contextRoot}/${jsonURL}';
+window.jsonURL='${contextRoot}/${EcejsonURL}';
+window.heading='${heading}';
 </script>
 
 <!-- Bootstrap core CSS -->
@@ -86,76 +87,16 @@ window.jsonURL='${contextRoot}/${jsonURL}';
 	<%@include file="soc-home.jsp"%>
 	</c:if>
 	
-	<!-- ag result  -->
-	<c:if test="${userClickAgResults==true}">
-	<%@include file="ag-results.jsp"%>
+	<!-- file result  -->
+	<c:if test="${fileResults==true}">
+	<%@include file="fileresults.jsp"%>
 	</c:if>
-	<!-- ag notices  -->
-	<c:if test="${userClickAgNotices==true}">
-	<%@include file="ag-notices.jsp"%>
-	</c:if>
-	
-	<!-- bba results -->
-	<c:if test="${userClickBbaResults==true}">
-	<%@include file="bba-results.jsp" %>
-	</c:if>
-	<!-- bba notices -->
-	<c:if test="${userClickBbaNotices==true}">
-	<%@include file="bba-notices.jsp" %>
+	<!-- file notices  -->
+	<c:if test="${fileNotices==true}">
+	<%@include file="filenotices.jsp"%>
 	</c:if>
 	
-	<!-- cse results -->
-	<c:if test="${userClickCseResults==true}">
-	<%@include file="cse-results.jsp" %>
-	</c:if>
-	<!-- cse notices -->
-	<c:if test="${userClickCseNotices==true}">
-	<%@include file="cse-notices.jsp" %>
-	</c:if>
 	
-	<!-- dvm results -->
-	<c:if test="${userClickDvmResults==true}">
-	<%@include file="dvm-results.jsp" %>
-	</c:if>
-	<!-- dvm notices -->
-	<c:if test="${userClickDvmNotices==true}">
-	<%@include file="dvm-notices.jsp" %>
-	</c:if>
-	<!-- eng results -->
-	<c:if test="${userClickEngResults==true}">
-	<%@include file="eng-results.jsp" %>
-	</c:if>
-	<!-- eng notices -->
-	<c:if test="${userClickEngNotices==true}">
-	<%@include file="eng-notices.jsp" %>
-	</c:if>
-	
-	<!-- fis results -->
-	<c:if test="${userClickFisResults==true}">
-	<%@include file="fis-results.jsp" %>
-	</c:if>
-	<!-- dvm notices -->
-	<c:if test="${userClickFisNotices==true}">
-	<%@include file="fis-notices.jsp" %>
-	</c:if>
-	
-	<!-- sc results -->
-	<c:if test="${userClickScResults==true}">
-	<%@include file="sc-results.jsp" %>
-    </c:if>
-	<!-- sc notices -->
-	<c:if test="${userClickScNotices==true}">
-	<%@include file="sc-notices.jsp" %>
-    </c:if>
-	<!-- so results -->
-	<c:if test="${userClickSoResults==true}">
-	<%@include file="soc-results.jsp" %>
-	</c:if>
-	
-	<!-- so notices -->
-	<c:if test="${userClickSoNotices==true}">
-	<%@include file="soc-notices.jsp" %>
-	</c:if>
 	
 	<!-- signup -->
 	<c:if test="${clickSignup==true}">
@@ -214,101 +155,28 @@ window.jsonURL='${contextRoot}/${jsonURL}';
 	</c:if>
 	
 	
-	<!-- agManageResult -->
-	<c:if test="${agManageResults==true}">
-	<%@include file="ag-manage-results.jsp" %>
+	<!-- Manage file Result -->
+	<c:if test="${manageFileResults==true}">
+	<%@include file="manage-results.jsp" %>
 	</c:if>
 	
 	
-	<!-- agManageNotices -->
-	<c:if test="${agManageNotices==true}">
-	<%@include file="ag-manage-notices.jsp" %>
-	</c:if>
-	
-	<!-- cseManageResult -->
-	<c:if test="${cseManageResults==true}">
-	<%@include file="cse-manage-results.jsp" %>
-	</c:if>
-	
-	
-	<!-- cseManageNotices -->
-	<c:if test="${cseManageNotices==true}">
-	<%@include file="cse-manage-notices.jsp" %>
-	</c:if>
-	
-	<!-- bbaManageResult -->
-	<c:if test="${bbaManageResults==true}">
-	<%@include file="bba-manage-results.jsp" %>
-	</c:if>
-	
-	
-	<!-- bbaManageNotices -->
-	<c:if test="${bbaManageNotices==true}">
-	<%@include file="bba-manage-notices.jsp" %>
-	</c:if>
-	
-	
-	<!-- fisManageResult -->
-	<c:if test="${fisManageResults==true}">
-	<%@include file="fis-manage-results.jsp" %>
-	</c:if>
-	
-	
-	<!-- fisManageNotices -->
-	<c:if test="${fisManageNotices==true}">
-	<%@include file="fis-manage-notices.jsp" %>
-	</c:if>
-	
-	
-	<!-- dvmManageResult -->
-	<c:if test="${dvmManageResults==true}">
-	<%@include file="dvm-manage-results.jsp" %>
-	</c:if>
-	
-	
-	<!-- dvmManageNotices -->
-	<c:if test="${dvmManageNotices==true}">
-	<%@include file="dvm-manage-notices.jsp" %>
-	</c:if>
-	
-	<!-- engManageResult -->
-	<c:if test="${engManageResults==true}">
-	<%@include file="eng-manage-results.jsp" %>
-	</c:if>
-	
-	
-	<!--engManageNotices -->
-	<c:if test="${engManageNotices==true}">
-	<%@include file="eng-manage-notices.jsp" %>
-	</c:if>
-	
-	
-	<!-- scManageResult -->
-	<c:if test="${scManageResults==true}">
-	<%@include file="sc-manage-results.jsp" %>
-	</c:if>
-	
-	
-	<!-- scManageNotices -->
-	<c:if test="${scManageNotices==true}">
-	<%@include file="sc-manage-notices.jsp" %>
-	</c:if>
-	
-	<!-- socManageResult -->
-	<c:if test="${socManageResults==true}">
-	<%@include file="soc-manage-results.jsp" %>
-	</c:if>
-	
-	
-	<!-- socManageNotices -->
-	<c:if test="${socManageNotices==true}">
-	<%@include file="soc-manage-notices.jsp" %>
+	<!-- Manage File Notices -->
+	<c:if test="${manageFileNotices==true}">
+	<%@include file="manage-notices.jsp" %>
 	</c:if>
 	
 	
 	<!-- ece l1s1 -->
 	<c:if test="${eceL1S1Form==true}">
 	<%@include file="./flows/results/manage-ecel1s1enter.jsp" %>
+	
+	
+	</c:if>
+	
+	<!-- ece all results -->
+	<c:if test="${eceAllResults==true}">
+	<%@include file="eceallresults.jsp" %>
 	
 	
 	</c:if>

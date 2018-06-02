@@ -36,7 +36,7 @@ public class ScManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/scManageResults",method=RequestMethod.POST)
-	public String scManageResults(@Valid @ModelAttribute("scmanageresults") Sc_Results sc_results,
+	public String scManageResults(@Valid @ModelAttribute("modelattribute") Sc_Results sc_results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside ScManageController-INFO");
@@ -45,7 +45,7 @@ public class ScManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("scManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -61,13 +61,13 @@ public class ScManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("scManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/scManageNotices",method=RequestMethod.POST)
-	public String scManageNotices(@Valid @ModelAttribute("scmanagenotices") Sc_Notices sc_notices,
+	public String scManageNotices(@Valid @ModelAttribute("modelattribute") Sc_Notices sc_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside ScManageController-INFO");
@@ -76,7 +76,7 @@ public class ScManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("scManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -92,7 +92,7 @@ public class ScManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("scManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}

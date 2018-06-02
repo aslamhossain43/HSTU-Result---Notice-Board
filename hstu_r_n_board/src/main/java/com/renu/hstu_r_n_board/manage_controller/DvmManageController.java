@@ -33,7 +33,7 @@ public class DvmManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/dvmManageResults",method=RequestMethod.POST)
-	public String dvmManageResults(@Valid @ModelAttribute("dvmmanageresults") Dvm_Results dvm_results,
+	public String dvmManageResults(@Valid @ModelAttribute("modelattribute") Dvm_Results dvm_results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside DvmManageController-INFO");
@@ -42,7 +42,7 @@ public class DvmManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("dvmManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -58,13 +58,13 @@ public class DvmManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("dvmManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/dvmManageNotices",method=RequestMethod.POST)
-	public String dvmManageNotices(@Valid @ModelAttribute("dvmmanagenotices") Dvm_Notices dvm_notices,
+	public String dvmManageNotices(@Valid @ModelAttribute("modelattribute") Dvm_Notices dvm_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside DvmManageController-INFO");
@@ -73,7 +73,7 @@ public class DvmManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("dvmManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -89,7 +89,7 @@ public class DvmManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("dvmManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}

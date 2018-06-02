@@ -30,7 +30,7 @@ public class AgManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/agManageResults",method=RequestMethod.POST)
-	public String agManageResults(@Valid @ModelAttribute("agmanageresults") Ag_Results ag_Results,
+	public String agManageResults(@Valid @ModelAttribute("modelattribute") Ag_Results ag_Results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside AgManageController-INFO");
@@ -39,7 +39,7 @@ public class AgManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("agManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -55,13 +55,13 @@ public class AgManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("agManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/agManageNotices",method=RequestMethod.POST)
-	public String agManageNotices(@Valid @ModelAttribute("agmanagenotices") Ag_Notices ag_notices,
+	public String agManageNotices(@Valid @ModelAttribute("modelattribute") Ag_Notices ag_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside AgManageController-INFO");
@@ -70,7 +70,7 @@ public class AgManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("agManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -86,7 +86,7 @@ public class AgManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("agManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}

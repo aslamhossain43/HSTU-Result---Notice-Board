@@ -34,7 +34,7 @@ public class SocManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/socManageResults",method=RequestMethod.POST)
-	public String socManageResults(@Valid @ModelAttribute("socmanageresults") Soc_Results soc_results,
+	public String socManageResults(@Valid @ModelAttribute("modelattribute") Soc_Results soc_results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside SocManageController-INFO");
@@ -43,7 +43,7 @@ public class SocManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("socManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -59,13 +59,13 @@ public class SocManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("socManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/socManageNotices",method=RequestMethod.POST)
-	public String socManageNotices(@Valid @ModelAttribute("socmanagenotices") Soc_Notices soc_notices,
+	public String socManageNotices(@Valid @ModelAttribute("modelattribute") Soc_Notices soc_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside SocManageController-INFO");
@@ -74,7 +74,7 @@ public class SocManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("socManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -90,7 +90,7 @@ public class SocManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("socManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}

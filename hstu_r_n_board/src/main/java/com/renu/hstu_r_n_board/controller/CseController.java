@@ -27,7 +27,7 @@ public ModelAndView showCseResults() {
 	
 	ModelAndView mv=new ModelAndView("page");
 	mv.addObject("jsonURL", "cse/all/results");
-	mv.addObject("userClickCseResults", true);
+	mv.addObject("fileResults", true);
 	return mv;
 			
 }
@@ -37,27 +37,31 @@ public ModelAndView showCseNotices() {
 	
 	ModelAndView mv=new ModelAndView("page");
 	mv.addObject("jsonURL", "cse/all/notices");
-	mv.addObject("userClickCseNotices", true);
+	mv.addObject("fileNotices", true);
 	return mv;
 			
 }
 	
 @RequestMapping("/cseManageResults")
-public ModelAndView showCseManageResults(Map<String,Object>map) {
+public ModelAndView showCseManageResults() {
 	//string must be as like as model attribute and small letters
-	map.put("csemanageresults",new Cse_Results());
 	ModelAndView mv=new ModelAndView("page");
-	mv.addObject("cseManageResults",true);
+	mv.addObject("modelattribute",new Cse_Results());
+	mv.addObject("urlr", "cseManageResults");
+	mv.addObject("manageFileResults",true);
+	mv.addObject("title","Manage CSE Results");
 	return mv;
 	
 }
 
 @RequestMapping("/cseManageNotices")
-public ModelAndView showCseManageNotices(Map<String,Object>map) {
+public ModelAndView showCseManageNotices() {
 	//string must be as lioke as modelAttribue and small letters
-	map.put("csemanagenotices",new Cse_Notices());
 	ModelAndView mv=new ModelAndView("page");
-	mv.addObject("cseManageNotices",true);
+	mv.addObject("modelattribute",new Cse_Notices());
+	mv.addObject("urln", "cseManageNotices");
+	mv.addObject("manageFileNotices",true);
+	mv.addObject("title","Manage CSE Notices");
 	return mv;
 	
 }

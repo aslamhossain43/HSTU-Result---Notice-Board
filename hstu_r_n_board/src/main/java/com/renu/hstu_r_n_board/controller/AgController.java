@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.webflow.mvc.builder.MvcEnvironment;
 
 import com.renu.hstu_r_n_board_backend.dao.NoticesDao;
 import com.renu.hstu_r_n_board_backend.dao.ResultsDao;
@@ -28,7 +29,7 @@ public class AgController {
 		
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "ag/all/results");
-		mv.addObject("userClickAgResults", true);
+		mv.addObject("fileResults", true);
 		return mv;
 		
 	}
@@ -37,26 +38,32 @@ public class AgController {
 	
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "ag/all/notices");
-		mv.addObject("userClickAgNotices", true);
+		mv.addObject("fileNotices", true);
 		return mv;
 		
 	}
 	@RequestMapping("/agManageResults")
-	public ModelAndView showAgManageResults(Map<String,Object>map) {
+	public ModelAndView showAgManageResults() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("agmanageresults",new Ag_Results());
+		
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("agManageResults",true);
+		mv.addObject("modelattribute",new Ag_Results());
+		mv.addObject("manageFileResults",true);
+		mv.addObject("urlr","agManageResults");
+		mv.addObject("title","Manage Agriculture Results");
 		return mv;
 		
 	}
 	
 	@RequestMapping("/agManageNotices")
-	public ModelAndView showAgManageNotices(Map<String,Object>map) {
+	public ModelAndView showAgManageNotices() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("agmanagenotices",new Ag_Notices());
+	
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("agManageNotices",true);
+		mv.addObject("modelattribute",new Ag_Notices());
+		mv.addObject("manageFileNotices",true);
+		mv.addObject("urln","agManageNotices");
+		mv.addObject("title", "Manage Agriculture Notices");
 		return mv;
 		
 	}

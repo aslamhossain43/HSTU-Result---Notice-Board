@@ -30,7 +30,7 @@ Electronics & Communication Engineering<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
 
-<li><a href="${contextRoot}/showEceL1S1/eceL1S1Form">ECE L1 S1</a></li>
+<li><a href="${contextRoot}/showEce/eceL1S1Form">ECE L1 S1</a></li>
 <li><a>ECE L1 S2</a></li>
 <li><a>ECE L2 S1</a></li>
 <li><a>ECE L2 S2</a></li>

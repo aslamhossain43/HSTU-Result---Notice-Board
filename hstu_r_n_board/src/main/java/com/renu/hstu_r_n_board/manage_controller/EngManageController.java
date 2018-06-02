@@ -33,7 +33,7 @@ public class EngManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/engManageResults",method=RequestMethod.POST)
-	public String engManageResults(@Valid @ModelAttribute("engmanageresults") Eng_Results eng_results,
+	public String engManageResults(@Valid @ModelAttribute("modelattribute") Eng_Results eng_results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside EngManageController-INFO");
@@ -42,7 +42,7 @@ public class EngManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("engManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -58,13 +58,13 @@ public class EngManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("engManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/engManageNotices",method=RequestMethod.POST)
-	public String engManageNotices(@Valid @ModelAttribute("engmanagenotices") Eng_Notices eng_notices,
+	public String engManageNotices(@Valid @ModelAttribute("modelattribute") Eng_Notices eng_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside EngManageController-INFO");
@@ -73,7 +73,7 @@ public class EngManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("engManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -89,7 +89,7 @@ public class EngManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("engManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}

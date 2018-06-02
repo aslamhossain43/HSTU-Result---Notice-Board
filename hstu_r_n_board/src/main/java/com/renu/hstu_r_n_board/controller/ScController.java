@@ -26,7 +26,7 @@ public class ScController {
 	public ModelAndView showScResults() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "sc/all/results");
-		mv.addObject("userClickScResults", true);
+		mv.addObject("fileResults", true);
 		return mv;
 		
 	}
@@ -35,7 +35,7 @@ public class ScController {
 	public ModelAndView showScNotices() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "sc/all/notices");
-		mv.addObject("userClickScNotices", true);
+		mv.addObject("fileNotices", true);
 		return mv;
 		
 	}
@@ -43,21 +43,25 @@ public class ScController {
 	
 	
 	@RequestMapping("/scManageResults")
-	public ModelAndView showScManageResults(Map<String,Object>map) {
+	public ModelAndView showScManageResults() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("scmanageresults",new Sc_Results());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("scManageResults",true);
+		mv.addObject("urlr", "scManageResults");
+		mv.addObject("modelattribute",new Sc_Results());
+		mv.addObject("manageFileResults",true);
+		mv.addObject("title","Manage Science Results");
 		return mv;
 		
 	}
 
 	@RequestMapping("/scManageNotices")
-	public ModelAndView showScManageNotices(Map<String,Object>map) {
+	public ModelAndView showScManageNotices() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("scmanagenotices",new Sc_Notices());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("scManageNotices",true);
+		mv.addObject("urln", "scManageNotices");
+		mv.addObject("modelattribute",new Sc_Notices());
+		mv.addObject("manageFileNotices",true);
+		mv.addObject("title","Manage Science Notices");
 		return mv;
 		
 	}

@@ -26,7 +26,7 @@ public class FisController {
 	public ModelAndView showFisResults() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "fis/all/results");
-		mv.addObject("userClickFisResults", true);
+		mv.addObject("fileResults", true);
 		return mv;
 		
 	}
@@ -35,27 +35,31 @@ public class FisController {
 	public ModelAndView showFisNotices() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "fis/all/notices");
-		mv.addObject("userClickFisNotices", true);
+		mv.addObject("fileNotices", true);
 		return mv;
 		
 	}
 	
 	@RequestMapping("/fisManageResults")
-	public ModelAndView showFisManageResults(Map<String,Object>map) {
+	public ModelAndView showFisManageResults() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("fismanageresults",new Fis_Results());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("fisManageResults",true);
+		mv.addObject("urlr","fisManageResults");
+		mv.addObject("modelattribute",new Fis_Results());
+		mv.addObject("manageFileResults",true);
+		mv.addObject("title", "Manage Fisheries Results");
 		return mv;
 		
 	}
 
 	@RequestMapping("/fisManageNotices")
-	public ModelAndView showFisManageNotices(Map<String,Object>map) {
+	public ModelAndView showFisManageNotices() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("fismanagenotices",new Fis_Notices());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("fisManageNotices",true);
+		mv.addObject("urln", "fisManageNotices");
+		mv.addObject("modelattribute",new Fis_Notices());
+		mv.addObject("manageFileNotices",true);
+		mv.addObject("title","Manage Fisheries Notices");
 		return mv;
 		
 	}

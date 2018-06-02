@@ -24,7 +24,16 @@
 <sf:form class="form-horizontal" 
 modelAttribute="ecel1s1add"
  method="POST"
- action="${contextRoot}/manageEceL1S1/eceL1S1Add">
+ action="${contextRoot}/manageEce/eceL1S1Add">
+ <div class="form-group">
+<label class="control-label col-md-8">Student ID </label>
+<!-- size of textarea not supported in internet explorer -->
+<div class="col-md-4">
+<sf:input path="sid" class="form-control" placeholder=""/>
+<sf:errors path="sid" cssClass="help-block" element="em" />
+</div>
+</div>
+ 
 <div class="form-group">
 <label class="control-label col-md-8">Basic Information Technologies--CSE 107</label>
 <!-- size of textarea not supported in internet explorer -->

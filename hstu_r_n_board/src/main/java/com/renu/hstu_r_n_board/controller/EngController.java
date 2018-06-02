@@ -27,7 +27,7 @@ public class EngController {
 	public ModelAndView showEngResults() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "eng/all/results");
-		mv.addObject("userClickEngResults", true);
+		mv.addObject("fileResults", true);
 		return mv;
 			
 		
@@ -36,7 +36,7 @@ public class EngController {
 	public ModelAndView showEngNotices() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "eng/all/notices");
-		mv.addObject("userClickEngNotices", true);
+		mv.addObject("fileNotices", true);
 		return mv;
 			
 		
@@ -44,21 +44,25 @@ public class EngController {
 	
 	
 	@RequestMapping("/engManageResults")
-	public ModelAndView showEngManageResults(Map<String,Object>map) {
+	public ModelAndView showEngManageResults() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("engmanageresults",new Eng_Results());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("engManageResults",true);
+		mv.addObject("modelattribute",new Eng_Results());
+		mv.addObject("urlr", "engManageResults");
+		mv.addObject("manageFileResults",true);
+		mv.addObject("title","Manage Engineering Results");
 		return mv;
 		
 	}
 
 	@RequestMapping("/engManageNotices")
-	public ModelAndView showEngManageNotices(Map<String,Object>map) {
+	public ModelAndView showEngManageNotices() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("engmanagenotices",new Dvm_Notices());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("engManageNotices",true);
+       mv.addObject("modelattribute",new Dvm_Notices());
+       mv.addObject("urln", "engManageNotices");
+		mv.addObject("manageFileNotices",true);
+		mv.addObject("title","Manage Engineering Notices");
 		return mv;
 		
 	}

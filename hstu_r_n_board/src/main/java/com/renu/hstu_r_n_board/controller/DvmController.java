@@ -27,7 +27,7 @@ public class DvmController {
 	public ModelAndView showDvmResults() {
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("jsonURL", "dvm/all/results");
-		mv.addObject("userClickDvmResults", true);
+		mv.addObject("fileResults", true);
 
 		return mv;
 
@@ -38,7 +38,7 @@ public class DvmController {
 	public ModelAndView showDvmNotices() {
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("jsonURL", "dvm/all/notices");
-		mv.addObject("userClickDvmNotices", true);
+		mv.addObject("fileNotices", true);
 
 		return mv;
 
@@ -47,21 +47,25 @@ public class DvmController {
 	
 	
 	@RequestMapping("/dvmManageResults")
-	public ModelAndView showDvmManageResults(Map<String,Object>map) {
+	public ModelAndView showDvmManageResults() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("dvmmanageresults",new Dvm_Results());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("dvmManageResults",true);
+		mv.addObject("modelattribute",new Dvm_Results());
+		mv.addObject("urlr", "dvmManageResults");
+		mv.addObject("manageFileResults",true);
+		mv.addObject("title","Manage DVM Results");
 		return mv;
 		
 	}
 
 	@RequestMapping("/dvmManageNotices")
-	public ModelAndView showDvmManageNotices(Map<String,Object>map) {
+	public ModelAndView showDvmManageNotices() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("dvmmanagenotices",new Dvm_Notices());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("dvmManageNotices",true);
+		mv.addObject("modelattribute",new Dvm_Notices());
+		mv.addObject("urln","dvmManageNotices");
+		mv.addObject("manageFileNotices",true);
+		mv.addObject("title","Manage DVM Notices");
 		return mv;
 		
 	}

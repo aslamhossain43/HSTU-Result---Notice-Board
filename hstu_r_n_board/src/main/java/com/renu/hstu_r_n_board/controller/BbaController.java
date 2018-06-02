@@ -29,7 +29,7 @@ public class BbaController {
 public ModelAndView showBbaResults() {
 	ModelAndView mv=new ModelAndView("page");
 	mv.addObject("jsonURL", "bba/all/results");
-	mv.addObject("userClickBbaResults",true);
+	mv.addObject("fileResults",true);
 	return mv;
 	
 }
@@ -38,28 +38,34 @@ public ModelAndView showBbaResults() {
 public ModelAndView showBbaNotices() {
 	ModelAndView mv=new ModelAndView("page");
 	mv.addObject("jsonURL", "bba/all/notices");
-	mv.addObject("userClickBbaNotices",true);
+	mv.addObject("fileNotices",true);
 	return mv;
 	
 }
 	
 	
 @RequestMapping("/bbaManageResults")
-public ModelAndView showBbaManageResults(Map<String,Object>map) {
+public ModelAndView showBbaManageResults() {
 	//string must be as lioke as modelAttribue and small letters
-	map.put("bbamanageresults",new Bba_Results());
+	
 	ModelAndView mv=new ModelAndView("page");
-	mv.addObject("bbaManageResults",true);
+	mv.addObject("modelattribute",new Bba_Results());
+	mv.addObject("urlr","bbaManageResults");
+	mv.addObject("manageFileResults",true);
+	mv.addObject("title","Manage BBA Results");
 	return mv;
 	
 }
 
 @RequestMapping("/bbaManageNotices")
-public ModelAndView showBbaManageNotices(Map<String,Object>map) {
+public ModelAndView showBbaManageNotices() {
 	//string must be as lioke as modelAttribue and small letters
-	map.put("bbamanagenotices",new Bba_Notices());
+	
 	ModelAndView mv=new ModelAndView("page");
-	mv.addObject("bbaManageNotices",true);
+	mv.addObject("modelattribute",new Bba_Notices());
+	mv.addObject("urln", "bbaManageNotices");
+	mv.addObject("manageFileNotices",true);
+	mv.addObject("title","Manage BBA Notices");
 	return mv;
 	
 }

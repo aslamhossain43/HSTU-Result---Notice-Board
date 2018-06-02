@@ -32,7 +32,7 @@ public class BbaManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/bbaManageResults",method=RequestMethod.POST)
-	public String bbaManageResults(@Valid @ModelAttribute("bbamanageresults") Bba_Results bba_results,
+	public String bbaManageResults(@Valid @ModelAttribute("modelattribute") Bba_Results bba_results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside BbaManageController-INFO");
@@ -41,7 +41,7 @@ public class BbaManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("bbaManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -57,13 +57,13 @@ public class BbaManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("bbaManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/bbaManageNotices",method=RequestMethod.POST)
-	public String bbaManageNotices(@Valid @ModelAttribute("bbamanagenotices") Bba_Notices bba_notices,
+	public String bbaManageNotices(@Valid @ModelAttribute("modelattribute") Bba_Notices bba_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside BbaManageController-INFO");
@@ -72,7 +72,7 @@ public class BbaManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("bbaManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -88,7 +88,7 @@ public class BbaManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("bbaManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}

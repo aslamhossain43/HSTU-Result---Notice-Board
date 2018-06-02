@@ -21,6 +21,8 @@ public class EceL1S1 implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(name="sid")
+	private String sid;
 	@Column(name = "cse107")
 	private double cse107;
 	@Column(name = "cse108")
@@ -44,6 +46,12 @@ public class EceL1S1 implements Serializable {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public String getSid() {
+		return sid;
+	}
+	public void setSid(String sid) {
+		this.sid = sid;
 	}
 	public double getCse107() {
 		return cse107;
@@ -101,11 +109,10 @@ public class EceL1S1 implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "EceL1S1 [id=" + id + ", cse107=" + cse107 + ", cse108=" + cse108 + ", mat109=" + mat109 + ", aie107="
-				+ aie107 + ", aie108=" + aie108 + ", ssl107=" + ssl107 + ", phy111=" + phy111 + ", phy112=" + phy112
-				+ ", gpa=" + gpa + "]";
+		return "EceL1S1 [id=" + id + ", sid=" + sid + ", cse107=" + cse107 + ", cse108=" + cse108 + ", mat109=" + mat109
+				+ ", aie107=" + aie107 + ", aie108=" + aie108 + ", ssl107=" + ssl107 + ", phy111=" + phy111
+				+ ", phy112=" + phy112 + ", gpa=" + gpa + "]";
 	}
-	
 	
 	
 	

@@ -33,7 +33,7 @@ public class CseManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/cseManageResults",method=RequestMethod.POST)
-	public String cseManageResults(@Valid @ModelAttribute("csemanageresults") Cse_Results cse_results,
+	public String cseManageResults(@Valid @ModelAttribute("modelattribute") Cse_Results cse_results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside CseManageController-INFO");
@@ -42,7 +42,7 @@ public class CseManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("cseManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -58,13 +58,13 @@ public class CseManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("cseManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/cseManageNotices",method=RequestMethod.POST)
-	public String cseManageNotices(@Valid @ModelAttribute("csemanagenotices") Cse_Notices cse_notices,
+	public String cseManageNotices(@Valid @ModelAttribute("modelattribute") Cse_Notices cse_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside CseManageController-INFO");
@@ -73,7 +73,7 @@ public class CseManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("cseManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -89,7 +89,7 @@ public class CseManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("cseManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}

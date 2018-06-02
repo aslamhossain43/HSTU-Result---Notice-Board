@@ -28,7 +28,7 @@ public class SocController {
 	public ModelAndView showSoResults() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "soc/all/results");
-		mv.addObject("userClickSoResults", true);
+		mv.addObject("fileResults", true);
 		return mv;
 		
 	}
@@ -36,7 +36,7 @@ public class SocController {
 	public ModelAndView showSoNotices() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("jsonURL", "soc/all/notices");
-		mv.addObject("userClickSoNotices", true);
+		mv.addObject("fileNotices", true);
 		return mv;
 		
 	}
@@ -44,21 +44,25 @@ public class SocController {
 	
 	
 	@RequestMapping("/socManageResults")
-	public ModelAndView showSocManageResults(Map<String,Object>map) {
+	public ModelAndView showSocManageResults() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("socmanageresults",new Soc_Results());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("socManageResults",true);
+		mv.addObject("urlr", "socManageResults");
+		mv.addObject("modelattribute",new Soc_Results());
+		mv.addObject("manageFileResults",true);
+		mv.addObject("title", "Manage Arts & Social Science Results");
 		return mv;
 		
 	}
 
 	@RequestMapping("/socManageNotices")
-	public ModelAndView showSocManageNotices(Map<String,Object>map) {
+	public ModelAndView showSocManageNotices() {
 		//string must be as lioke as modelAttribue and small letters
-		map.put("socmanagenotices",new Soc_Notices());
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("socManageNotices",true);
+		mv.addObject("urln","socManageNotices");
+		mv.addObject("modelattribute",new Soc_Notices());
+		mv.addObject("manageFileNotices",true);
+		mv.addObject("title", "Manage Arts & Social Science Notices");
 		return mv;
 		
 	}

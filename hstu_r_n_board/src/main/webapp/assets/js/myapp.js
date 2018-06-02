@@ -22,7 +22,7 @@ $(function() {
 		var jsonUrl='';
 		
 		
-		 switch(jsonURL){
+		 switch(filejsonURL){
 		case contextRoot+'/ag/all/results':
 			jsonUrl=contextRoot+'/ag/all/results';
 			break;
@@ -90,19 +90,17 @@ $(function() {
 		  
 	  },
 	  columns : [
-		  
 		  {
-			data:'id'  
+			  data:'description'
+			 
 		  },
-		  
-		  
 		  {
 			  data:'img_url',
 			  bSortable:false,
 			  mRender:function(data,type,row){
 				  return '<img src="'+window.contextRoot
 				  +'/assets/images/'
-				  +data+'.jpg" class="agImgResults"/>';
+				  +data+'.jpg" class="fileResults"/>';
 				  
 				  
 				  
@@ -110,9 +108,90 @@ $(function() {
 			  
 			  
 			  
+		  }
+		 
+		  
+		  
+	  ]
+		
+		
+		
+		
+	});
+	}
+//for accessing ECE all results
+	
+	var $eceAllresults=$('#eceAllresults');
+	
+	if($eceAllresults.length){
+		console.log('inside the table');
+		var jsonUrl='';
+		
+		
+		 switch(jsonURL){
+		case contextRoot+'/showEce/eceL1S1AllResults':
+			jsonUrl=contextRoot+'/jsonEce/allResultsL1S1';
+			break;
+		case contextRoot+'/showEce/eceL1S2AllResults':
+			jsonUrl=contextRoot+'/jsonEce/allResultsL1S2';
+			break;
+		
+		}
+
+
+	
+		 $eceAllresults.DataTable({
+	  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
+	  pageLength:30,
+	  ajax:{
+		  url:jsonUrl,
+		  dataSrc : ''
+		 
+		  
+	  },
+	  columns : [
+		  
+		  {
+			data:'sid'  
+		  },
+		  
+		  
+		  {
+			  data:'cse107'
+			 
+			  
+			  
 		  },
 		  {
-			  data:'description'
+			  data:'cse108'
+			 
+		  },
+		  {
+			  data:'mat109'
+			 
+		  },
+		  {
+			  data:'aie107'
+			 
+		  },
+		  {
+			  data:'aie108'
+			 
+		  },
+		  {
+			  data:'ssl107'
+			 
+		  },
+		  {
+			  data:'phy111'
+			 
+		  },
+		  {
+			  data:'phy112'
+			 
+		  },
+		  {
+			  data:'gpa'
 			 
 		  }
 		  

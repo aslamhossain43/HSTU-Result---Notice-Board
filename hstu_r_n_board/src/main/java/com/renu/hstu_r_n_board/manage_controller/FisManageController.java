@@ -33,7 +33,7 @@ public class FisManageController {
 	private NoticesDao noticesDao;
 
 	@RequestMapping(value="/fisManageResults",method=RequestMethod.POST)
-	public String fisManageResults(@Valid @ModelAttribute("fismanageresults") Fis_Results fis_results,
+	public String fisManageResults(@Valid @ModelAttribute("modelattribute") Fis_Results fis_results,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside FisManageController-INFO");
@@ -42,7 +42,7 @@ public class FisManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("fisManageResults",true);
+			model.addAttribute("manageFileResults",true);
 			return "page";
 			
 		}
@@ -58,13 +58,13 @@ public class FisManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("fisManageResults",true);
+		model.addAttribute("manageFileResults",true);
 		return "page";
 		
 	}
 	
 	@RequestMapping(value="/fisManageNotices",method=RequestMethod.POST)
-	public String fisManageNotices(@Valid @ModelAttribute("fismanagenotices") Fis_Notices fis_notices,
+	public String fisManageNotices(@Valid @ModelAttribute("modelattribute") Fis_Notices fis_notices,
 			BindingResult bindingResult,Model model,HttpServletRequest request) {
 		
 		logger.info("Inside FisManageController-INFO");
@@ -73,7 +73,7 @@ public class FisManageController {
 		
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("message","Failed your operation !");
-			model.addAttribute("fisManageNotices",true);
+			model.addAttribute("manageFileNotices",true);
 			return "page";
 			
 		}
@@ -89,7 +89,7 @@ public class FisManageController {
 		
 		
 		model.addAttribute("message","Operation has been completed successfully !");
-		model.addAttribute("fisManageNotices",true);
+		model.addAttribute("manageFileNotices",true);
 		return "page";
 		
 	}
