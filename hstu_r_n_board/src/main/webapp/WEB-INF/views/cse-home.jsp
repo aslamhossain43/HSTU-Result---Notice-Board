@@ -42,12 +42,12 @@
                 <div class="list-group">
                     <a href="${contextRoot}/showEce/eceL1S1AllResults" class="list-group-item">Results of ECE L-1 S-1</a>
                    <a href="${contextRoot}/showEce/eceL1S2AllResults" class="list-group-item">Results of ECE L-1 S-2</a>
-                   <a href="${contextRoot}/cse/resultsece21" class="list-group-item">Results of ECE L-2 S-1</a>
-                   <a href="${contextRoot}/cse/resultsece22" class="list-group-item">Results of ECE L-2 S-2</a>
-                   <a href="${contextRoot}/cse/resultsece31" class="list-group-item">Results of ECE L-3 S-1</a>
-                   <a href="${contextRoot}/cse/resultsece32" class="list-group-item">Results of ECE L-3 S-2</a>
-                   <a href="${contextRoot}/cse/resultsece41" class="list-group-item">Results of ECE L-4 S-1</a>
-                   <a href="${contextRoot}/cse/resultsece42" class="list-group-item">Results of ECE L-4 S-2</a>
+                   <a href="${contextRoot}/showEce/eceL2S1AllResults" class="list-group-item">Results of ECE L-2 S-1</a>
+                   <a href="${contextRoot}/showEce/eceL2S2AllResults" class="list-group-item">Results of ECE L-2 S-2</a>
+                   <a href="${contextRoot}/showEce/eceL3S1AllResults"  class="list-group-item">Results of ECE L-3 S-1</a>
+                   <a href="${contextRoot}/showEce/eceL3S2AllResults"  class="list-group-item">Results of ECE L-3 S-2</a>
+                   <a href="${contextRoot}/showEce/eceL4S1AllResults"  class="list-group-item">Results of ECE L-4 S-1</a>
+                   <a href="${contextRoot}/showEce/eceL4S2AllResults"  class="list-group-item">Results of ECE L-4 S-2</a>
                    
                 
                 </div>
