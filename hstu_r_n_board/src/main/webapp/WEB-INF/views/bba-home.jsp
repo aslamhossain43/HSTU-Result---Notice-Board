@@ -3,8 +3,9 @@
         <div class="row">
 
            <!-- side bar -->
-           <div class="col-md-3">
-              
+           <div class="col-md-2">
+           <hr>
+              <h4>File Results and Notices</h4>
                 <div class="list-group">
                     <a href="${contextRoot}/bba/results" class="list-group-item">Results of BBA Faculty</a>
                     <a href="${contextRoot}/bba/notices" class="list-group-item">Notices of BBA Faculty</a>
@@ -12,133 +13,94 @@
                 
                 </div>
             </div>
-           
-
-            <div class="col-md-9">
-
-               
-                <div class="row">
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
-                                </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">18 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <h4><a href="#">Like this template?</a>
-                        </h4>
-                        <p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
-                        <a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
-                    </div>
-
+            
+            <!-- side bar -->
+           <div class="col-md-2">
+           <hr>
+           <h4>Accounting</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/act/resultsact11" class="list-group-item">Results of Accounting L-1 S-1</a>
+                   <a href="${contextRoot}/act/resultsact12" class="list-group-item">Results of Accounting L-1 S-2</a>
+                   <a href="${contextRoot}/act/resultsact21" class="list-group-item">Results of Accounting L-2 S-1</a>
+                   <a href="${contextRoot}/act/resultsact22" class="list-group-item">Results of Accounting L-2 S-2</a>
+                   <a href="${contextRoot}/act/resultsact31" class="list-group-item">Results of Accounting L-3 S-1</a>
+                   <a href="${contextRoot}/act/resultsact32" class="list-group-item">Results of Accounting L-3 S-2</a>
+                   <a href="${contextRoot}/act/resultsact41" class="list-group-item">Results of Accounting L-4 S-1</a>
+                   <a href="${contextRoot}/act/resultsact42" class="list-group-item">Results of Accounting L-4 S-2</a>
+                   
+                   
+                
                 </div>
-
             </div>
+           
+        <!-- side bar -->
+           <div class="col-md-2">
+           <hr>
+           <h4>Management</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/man/resultsman11" class="list-group-item">Results of Management L-1 S-1</a>
+                   <a href="${contextRoot}/man/resultsman12" class="list-group-item">Results of Management L-1 S-2</a>
+                   <a href="${contextRoot}/man/resultsman21" class="list-group-item">Results of Management L-2 S-1</a>
+                   <a href="${contextRoot}/man/resultsman22" class="list-group-item">Results of Management L-2 S-2</a>
+                   <a href="${contextRoot}/man/resultsman31" class="list-group-item">Results of Management L-3 S-1</a>
+                   <a href="${contextRoot}/man/resultsman32" class="list-group-item">Results of Management L-3 S-2</a>
+                   <a href="${contextRoot}/man/resultsman41" class="list-group-item">Results of Management L-4 S-1</a>
+                   <a href="${contextRoot}/man/resultsman42" class="list-group-item">Results of Management L-4 S-2</a>
+                   
+                   
+                
+                </div>
+            </div>
+            <!-- side bar -->
+           <div class="col-md-2">
+           <hr>
+           <h4>Marketing</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/mar/resultsmar11" class="list-group-item">Results of Marketing L-1 S-1</a>
+                   <a href="${contextRoot}/mar/resultsmar12" class="list-group-item">Results of Marketing L-1 S-2</a>
+                   <a href="${contextRoot}/mar/resultsmar21" class="list-group-item">Results of Marketing L-2 S-1</a>
+                   <a href="${contextRoot}/mar/resultsmar22" class="list-group-item">Results of Marketing L-2 S-2</a>
+                   <a href="${contextRoot}/mar/resultsmar31" class="list-group-item">Results of Marketing L-3 S-1</a>
+                   <a href="${contextRoot}/mar/resultsmar32" class="list-group-item">Results of Marketing L-3 S-2</a>
+                   <a href="${contextRoot}/mar/resultsmar41" class="list-group-item">Results of Marketing L-4 S-1</a>
+                   <a href="${contextRoot}/mar/resultsmar42" class="list-group-item">Results of Marketing L-4 S-2</a>
+                   
+                   
+                
+                </div>
+            </div>
+
+       <!-- side bar -->
+           <div class="col-md-2">
+           <hr>
+           <h4>Finance & Banking</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/fin/resultsfin11" class="list-group-item">Results of Finance & Banking L-1 S-1</a>
+                   <a href="${contextRoot}/fin/resultsfin12" class="list-group-item">Results of Finance & Banking L-1 S-2</a>
+                   <a href="${contextRoot}/fin/resultsfin21" class="list-group-item">Results of Finance & Banking L-2 S-1</a>
+                   <a href="${contextRoot}/fin/resultsfin22" class="list-group-item">Results of Finance & Banking L-2 S-2</a>
+                   <a href="${contextRoot}/fin/resultsfin31" class="list-group-item">Results of Finance & Banking L-3 S-1</a>
+                   <a href="${contextRoot}/fin/resultsfin32" class="list-group-item">Results of Finance & Banking L-3 S-2</a>
+                   <a href="${contextRoot}/fin/resultsfin41" class="list-group-item">Results of Finance & Banking L-4 S-1</a>
+                   <a href="${contextRoot}/fin/resultsfin42" class="list-group-item">Results of Finance & Banking L-4 S-2</a>
+                   
+                   
+                
+                </div>
+            </div>
+
+      
+
+
+
 
         </div>
 

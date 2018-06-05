@@ -5,8 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="csel3s1")
+
 public class Csel3s1 implements Serializable{
 
 	/**

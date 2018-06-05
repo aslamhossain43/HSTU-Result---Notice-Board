@@ -3,8 +3,8 @@
         <div class="row">
 
            <!-- side bar -->
-           <div class="col-md-3">
-              
+           <div class="col-md-2">
+              <h4>Science Results and Notices</h4>
                 <div class="list-group">
                     <a href="${contextRoot}/sc/results" class="list-group-item">Results of Science Faculty</a>
                     <a href="${contextRoot}/sc/notices" class="list-group-item">Notices of Science Faculty</a>
@@ -12,134 +12,93 @@
                 
                 </div>
             </div>
+                       <!-- side bar -->
+           <div class="col-md-2">
+         
+           <h4>Chemistry</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/che/resultsche11" class="list-group-item">Results of Chemistry L-1 S-1</a>
+                   <a href="${contextRoot}/che/resultsche12" class="list-group-item">Results of Chemistry L-1 S-2</a>
+                   <a href="${contextRoot}/che/resultsche21" class="list-group-item">Results of Chemistry L-2 S-1</a>
+                   <a href="${contextRoot}/che/resultsche22" class="list-group-item">Results of Chemistry L-2 S-2</a>
+                   <a href="${contextRoot}/che/resultsche31" class="list-group-item">Results of Chemistry L-3 S-1</a>
+                   <a href="${contextRoot}/che/resultsche32" class="list-group-item">Results of Chemistry L-3 S-2</a>
+                   <a href="${contextRoot}/che/resultsche41" class="list-group-item">Results of Chemistry L-4 S-1</a>
+                   <a href="${contextRoot}/che/resultsche42" class="list-group-item">Results of Chemistry L-4 S-2</a>
+                   
+                   
+                
+                </div>
+            </div>
+           
+                       <!-- side bar -->
+           <div class="col-md-2">
+          
+           <h4>Physics</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/phy/resultsphy11" class="list-group-item">Results of Physics L-1 S-1</a>
+                   <a href="${contextRoot}/phy/resultsphy12" class="list-group-item">Results of Physics L-1 S-2</a>
+                   <a href="${contextRoot}/phy/resultsphy21" class="list-group-item">Results of Physics L-2 S-1</a>
+                   <a href="${contextRoot}/phy/resultsphy22" class="list-group-item">Results of Physics L-2 S-2</a>
+                   <a href="${contextRoot}/phy/resultsphy31" class="list-group-item">Results of Physics L-3 S-1</a>
+                   <a href="${contextRoot}/phy/resultsphy32" class="list-group-item">Results of Physics L-3 S-2</a>
+                   <a href="${contextRoot}/phy/resultsphy41" class="list-group-item">Results of Physics L-4 S-1</a>
+                   <a href="${contextRoot}/phy/resultsphy42" class="list-group-item">Results of Physics L-4 S-2</a>
+                   
+                   
+                
+                </div>
+            </div>
+           
+                       <!-- side bar -->
+           <div class="col-md-2">
+          
+           <h4>Mathematics</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/mat/resultsmat11" class="list-group-item">Results of Mathematics L-1 S-1</a>
+                   <a href="${contextRoot}/mat/resultsmat12" class="list-group-item">Results of Mathematics L-1 S-2</a>
+                   <a href="${contextRoot}/mat/resultsmat21" class="list-group-item">Results of Mathematics L-2 S-1</a>
+                   <a href="${contextRoot}/mat/resultsmat22" class="list-group-item">Results of Mathematics L-2 S-2</a>
+                   <a href="${contextRoot}/mat/resultsmat31" class="list-group-item">Results of Mathematics L-3 S-1</a>
+                   <a href="${contextRoot}/mat/resultsmat32" class="list-group-item">Results of Mathematics L-3 S-2</a>
+                   <a href="${contextRoot}/mat/resultsmat41" class="list-group-item">Results of Mathematics L-4 S-1</a>
+                   <a href="${contextRoot}/mat/resultsmat42" class="list-group-item">Results of Mathematics L-4 S-2</a>
+                   
+                   
+                
+                </div>
+            </div>
+           
+                       <!-- side bar -->
+           <div class="col-md-2">
+         
+           <h4>Statistics</h4>
+              
+                <div class="list-group">
+                   
+                    <a href="${contextRoot}/sta/resultssta11" class="list-group-item">Results of Statistics L-1 S-1</a>
+                   <a href="${contextRoot}/sta/resultssta12" class="list-group-item">Results of Statistics L-1 S-2</a>
+                   <a href="${contextRoot}/sta/resultssta21" class="list-group-item">Results of Statistics L-2 S-1</a>
+                   <a href="${contextRoot}/sta/resultssta22" class="list-group-item">Results of Statistics L-2 S-2</a>
+                   <a href="${contextRoot}/sta/resultssta31" class="list-group-item">Results of Statistics L-3 S-1</a>
+                   <a href="${contextRoot}/sta/resultssta32" class="list-group-item">Results of Statistics L-3 S-2</a>
+                   <a href="${contextRoot}/sta/resultssta41" class="list-group-item">Results of Statistics L-4 S-1</a>
+                   <a href="${contextRoot}/sta/resultssta42" class="list-group-item">Results of Statistics L-4 S-2</a>
+                   
+                   
+                
+                </div>
+            </div>
+           
            
 
-            <div class="col-md-9">
-
-               
-                <div class="row">
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
-                                </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">18 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <h4><a href="#">Like this template?</a>
-                        </h4>
-                        <p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
-                        <a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
-                    </div>
-
-                </div>
-
-            </div>
-
+           
         </div>
 
     </div>
