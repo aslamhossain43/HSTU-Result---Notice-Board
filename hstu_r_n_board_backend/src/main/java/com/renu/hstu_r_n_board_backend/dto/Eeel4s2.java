@@ -2,9 +2,6 @@ package com.renu.hstu_r_n_board_backend.dto;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 
 public class Eeel4s2 implements Serializable{
 
