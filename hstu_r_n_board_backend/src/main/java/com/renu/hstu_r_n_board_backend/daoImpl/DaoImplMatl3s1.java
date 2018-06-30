@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.renu.hstu_r_n_board_backend.dao.DaoMatl3s1;
-import com.renu.hstu_r_n_board_backend.dto.Matl2s1;
 import com.renu.hstu_r_n_board_backend.dto.Matl3s1;
 
 @Repository
