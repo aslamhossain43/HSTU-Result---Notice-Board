@@ -76,8 +76,7 @@ public class DaoImplMatl3s1 implements DaoMatl3s1 {
 	@Override
 	public Matl3s1 matL3S1GetById(int id) {
 
-		List<Matl3s1> list = sessionFactory.getCurrentSession().createQuery("FROM Matl3s1 p where p.id=:id")
-				.setParameter("id", id).list();
+		List<Matl3s1> list = sessionFactory.getCurrentSession().createQuery("FROM Matl3s1 p where p.id=:id").setParameter("id", id).list();
 		return list.size() > 0 ? list.get(0) : null;
 
 	}
