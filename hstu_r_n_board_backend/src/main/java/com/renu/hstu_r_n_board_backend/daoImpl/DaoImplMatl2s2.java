@@ -75,8 +75,7 @@ public class DaoImplMatl2s2 implements DaoMatl2s2{
 	@Override
 	public Matl2s2 matL2S2GetById(int id) {
 
-		List<Matl2s2> list = sessionFactory.getCurrentSession().createQuery("FROM Matl2s2 p where p.id=:id")
-				.setParameter("id", id).list();
+		List<Matl2s2> list = sessionFactory.getCurrentSession().createQuery("FROM Matl2s2 p where p.id=:id").setParameter("id", id).list();
 		return list.size() > 0 ? list.get(0) : null;
 
 	}
