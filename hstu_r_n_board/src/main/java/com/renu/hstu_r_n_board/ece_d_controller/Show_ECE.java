@@ -125,7 +125,7 @@ public class Show_ECE {
 		
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("eceAllResultsl1s1", true);
-		mv.addObject("EcejsonURL", "showEce/eceL1S1AllResults");
+		mv.addObject("EcejsonURL", "/jsonEce/allResultsL1S1");
 		mv.addObject("title","ECE L1 S1");
 		mv.addObject("heading","Results of ECE L1 S1");
 		return mv;
@@ -137,7 +137,7 @@ public class Show_ECE {
 			
 			ModelAndView mv=new ModelAndView("page");
 			mv.addObject("eceAllResultsl1s2", true);
-			mv.addObject("EcejsonURL", "showEce/eceL1S2AllResults");
+			mv.addObject("EcejsonURL", "/jsonEce/allResultsL1S2");
 			mv.addObject("title","ECE L1 S2");
 			mv.addObject("heading","Results of ECE L1 S2");
 			return mv;
@@ -149,7 +149,7 @@ public class Show_ECE {
 					
 					ModelAndView mv=new ModelAndView("page");
 					mv.addObject("eceAllResultsl2s1", true);
-					mv.addObject("EcejsonURL", "showEce/eceL2S1AllResults");
+					mv.addObject("EcejsonURL", "/jsonEce/allResultsL2S1");
 					mv.addObject("title","ECE L2 S1");
 					mv.addObject("heading","Results of ECE L2 S1");
 					return mv;
@@ -161,7 +161,7 @@ public class Show_ECE {
 					
 					ModelAndView mv=new ModelAndView("page");
 					mv.addObject("eceAllResultsl2s2", true);
-					mv.addObject("EcejsonURL", "showEce/eceL2S2AllResults");
+					mv.addObject("EcejsonURL", "/jsonEce/allResultsL2S2");
 					mv.addObject("title","ECE L2 S2");
 					mv.addObject("heading","Results of ECE L2 S2");
 					return mv;
@@ -173,7 +173,7 @@ public class Show_ECE {
 					
 					ModelAndView mv=new ModelAndView("page");
 					mv.addObject("eceAllResultsl3s1", true);
-					mv.addObject("EcejsonURL", "showEce/eceL3S1AllResults");
+					mv.addObject("EcejsonURL", "/jsonEce/allResultsL3S1");
 					mv.addObject("title","ECE L3 S1");
 					mv.addObject("heading","Results of ECE L3 S1");
 					return mv;
@@ -185,7 +185,7 @@ public class Show_ECE {
 					
 					ModelAndView mv=new ModelAndView("page");
 					mv.addObject("eceAllResultsl3s2", true);
-					mv.addObject("EcejsonURL", "showEce/eceL3S2AllResults");
+					mv.addObject("EcejsonURL", "/jsonEce/allResultsL3S2");
 					mv.addObject("title","ECE L3 S2");
 					mv.addObject("heading","Results of ECE L3 S2");
 					return mv;
@@ -198,7 +198,7 @@ public class Show_ECE {
 					
 					ModelAndView mv=new ModelAndView("page");
 					mv.addObject("eceAllResultsl4s1", true);
-					mv.addObject("EcejsonURL", "showEce/eceL4S1AllResults");
+					mv.addObject("EcejsonURL", "/jsonEce/allResultsL4S1");
 					mv.addObject("title","ECE L4 S1");
 					mv.addObject("heading","Results of ECE L4 S1");
 					return mv;
@@ -211,7 +211,7 @@ public class Show_ECE {
 					
 					ModelAndView mv=new ModelAndView("page");
 					mv.addObject("eceAllResultsl4s2", true);
-					mv.addObject("EcejsonURL", "showEce/eceL4S2AllResults");
+					mv.addObject("EcejsonURL", "/jsonEce/allResultsL4S2");
 					mv.addObject("title","ECE L4 S2");
 					mv.addObject("heading","Results of ECE L4 S2");
 					return mv;

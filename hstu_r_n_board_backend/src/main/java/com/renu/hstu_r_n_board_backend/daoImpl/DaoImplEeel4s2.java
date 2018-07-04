@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.renu.hstu_r_n_board_backend.dao.DaoEeel4s2;
-import com.renu.hstu_r_n_board_backend.dto.Eeel4s1;
 import com.renu.hstu_r_n_board_backend.dto.Eeel4s2;
 
 @Repository
@@ -31,13 +30,13 @@ public class DaoImplEeel4s2 implements DaoEeel4s2{
 		}
 
 		@Override
-		public List<Eeel4s2> creatQuer() {
-			return sessionFactory.getCurrentSession().createQuery("FROM Eeel4s2", Eeel4s1.class).getResultList();
+		public List<Eeel4s2> eeeL4S2GetAll() {
+			return sessionFactory.getCurrentSession().createQuery("FROM Eeel4s2", Eeel4s2.class).getResultList();
 			
 		}
 
 		@Override
-		public boolean eeeL4S2Delete(int i@) {
+		public boolean eeeL4S2Delete(int id) {
 	try {
 		Eeel4s2 list=sessionFactory.getCurrentSession().load(Eeel4s2.class, id);
 		if (list!=null) {
@@ -52,7 +51,7 @@ public class DaoImplEeel4s2 implements DaoEeel4s2{
 		}
 
 		@Override
-		public boolean eeeL4S2(Eeel4s2 eeel4s2) {
+		public boolean eeeL4S2Update(Eeel4s2 eeel4s2) {
 		try {
 			sessionFactory.getCurrentSession().update(eeel4s2);
 			return true;
@@ -75,8 +74,9 @@ public class DaoImplEeel4s2 implements DaoEeel4s2{
 		}
 
 		@Override
-		public Eeel4s2 GetById(int id) {
+		public Eeel4s2 eeeL4S2GetById(int id) {
 		List<Eeel4s2>list=sessionFactory.getCurrentSession().createQuery("FROM Eeel3s2 p where p.id=:id").setParameter("id", id).list();
 		return list.size()>0?list.get(0):null;
 		}
+
 }

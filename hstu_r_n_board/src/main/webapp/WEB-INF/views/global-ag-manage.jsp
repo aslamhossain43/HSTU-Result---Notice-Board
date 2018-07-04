@@ -1,16 +1,10 @@
 <div class="container">
 <div class="row">
-<div class="col-md-6">
-<p class="lead">Manage Results & Notices</p>
-<div class="list-group">
-<a href="${contextRoot}/ag/agManageResults" class="list-group-item">Agriculture Results</a>
-<a href="${contextRoot}/ag/agManageNotices" class="list-group-item">Agriculture Notices</a>
-</div>
-</div>
+
 
 <div class="col-md-6">
-<hr>
-<h4>Agriculture Department</h4>
+<div class="col-md-10 col-md-offset-1">
+<p class="lead">Dynamic Results Managing</p>
 <div class="list-group">
 
 <a class="list-group-item dropdown dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">
@@ -32,5 +26,23 @@ Agriculture<span class="caret"></span>
 </ul>
 </div>
 </div>
+</div>
+
+
+<div class="col-md-6 col-md-pull-0">
+<div class="col-md-10 col-md-offset-1">
+<p class="lead">Manage Results & Notices As Images</p>
+<div class="list-group">
+<a href="${contextRoot}/ag/agManageResults" class="list-group-item">Agriculture Results</a>
+<a href="${contextRoot}/ag/agManageNotices" class="list-group-item">Agriculture Notices</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
 </div>
 </div>

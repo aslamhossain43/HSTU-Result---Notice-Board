@@ -1,6 +1,7 @@
 <div class="container">
 <div class="row">
-<div class="col-md-4 col-md-offset-4">
+<div class="col-md-6 col-md-pull-0">
+<div class="col-md-10 col-md-offset-1">
 <p class="lead">Dynamic Results Managing</p>
 <div class="list-group">
 
@@ -61,14 +62,21 @@ Electronic & Electrical Engineering<span class="caret"></span>
 
 </div>
 </div>
+</div>
+<div class="col-md-6">
 <div class="list-group">
 <!-- for images -->
-<div class="col-md-4 col-md-offset-4">
+<div class="col-md-10 col-md-offset-1">
 <p class="lead">Manage Results & Notices As Images</p>
 <div class="list-group">
 <a href="${contextRoot}/cse/cseManageResults" class="list-group-item">Computer Science & Engineering Results</a>
 <a href="${contextRoot}/cse/cseManageNotices" class="list-group-item">Computer Science & Engineering Notices</a>
 </div>
 </div>
+</div>
+</div>
+
+
+
 </div>
 </div>

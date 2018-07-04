@@ -128,7 +128,7 @@ $(function() {
 		var jsonUrl='';
 		
 		
-			jsonUrl=contextRoot+'/jsonEce/allResultsL1S1';
+			jsonUrl=jsonURLece;
 			
 
 
@@ -207,7 +207,7 @@ $(function() {
 		
 		
 	
-			jsonUrl=contextRoot+'/jsonEce/allResultsL1S2';
+			jsonUrl=jsonURLece;
 			
 		 $eceAllresults.DataTable({
 			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
@@ -290,7 +290,7 @@ $(function() {
 		
 		
 	
-			jsonUrl=contextRoot+'/jsonEce/allResultsL2S1';
+			jsonUrl=jsonURLece;
 			
 		 $eceAllresults.DataTable({
 			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
@@ -375,7 +375,7 @@ $(function() {
 		
 		
 	
-			jsonUrl=contextRoot+'/jsonEce/allResultsL2S2';
+			jsonUrl=jsonURLece;
 			
 		 $eceAllresults.DataTable({
 			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
@@ -464,7 +464,7 @@ $(function() {
 		
 		
 	
-			jsonUrl=contextRoot+'/jsonEce/allResultsL3S1';
+			jsonUrl=jsonURLece;
 			
 		 $eceAllresults.DataTable({
 			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
@@ -551,7 +551,7 @@ $(function() {
 		
 		
 	
-			jsonUrl=contextRoot+'/jsonEce/allResultsL3S2';
+			jsonUrl=jsonURLece;
 			
 		 $eceAllresults.DataTable({
 			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
@@ -638,7 +638,7 @@ $(function() {
 		
 		
 	
-			jsonUrl=contextRoot+'/jsonEce/allResultsL4S1';
+			jsonUrl=jsonURLece;
 			
 		 $eceAllresults.DataTable({
 			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
@@ -728,7 +728,7 @@ $(function() {
 		
 		
 	
-			jsonUrl=contextRoot+'/jsonEce/allResultsL4S2';
+			jsonUrl=jsonURLece;
 			
 		 $eceAllresults.DataTable({
 			  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
@@ -797,6 +797,353 @@ $(function() {
 				
 			});
 	}
+	
+	
+//for accessing ag l1s1 results
+	
+	var $agAllresults=$('#agAllresultsl1s1');
+	
+	if($agAllresults.length){
+		console.log('inside the table');
+		var jsonUrl='';
+		
+		
+			jsonUrl=jsonURLag;
+			
+
+
+	
+		 $agAllresults.DataTable({
+	  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
+	  pageLength:30,
+	  ajax:{
+		  url:jsonUrl,
+		  dataSrc : ''
+		 
+		  
+	  },
+	  columns : [
+		  
+		  {
+			data:'sid'  
+		  },
+		  
+		  
+		  {
+			  data:'agn101'
+			 
+			  
+			  
+		  },
+		  {
+			  data:'agn102'
+			 
+		  },
+		  {
+			  data:'ach101'
+			 
+		  },
+		  {
+			  data:'ach102'
+			 
+		  },
+		  {
+			  data:'ssc101'
+			 
+		  },
+		  {
+			  data:'ssc102'
+			 
+		  },
+		  {
+			  data:'ach103'
+			 
+		  },
+		  {
+			  data:'ssl103'
+			 
+		  },
+		  {
+			  data:'optional103'
+			 
+		  },
+		  {
+			  data:'gpa'
+			 
+		  }
+		  
+		  
+		  
+	  ]
+		
+		
+		
+		
+	});
+	} 
+	
+	
+//for accessing ag l1s2 results
+	
+	var $agAllresults=$('#agAllresultsl1s2');
+	
+	if($agAllresults.length){
+		console.log('inside the table');
+		var jsonUrl='';
+		
+		
+			jsonUrl=jsonURLag;
+			
+
+
+	
+		 $agAllresults.DataTable({
+	  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
+	  pageLength:30,
+	  ajax:{
+		  url:jsonUrl,
+		  dataSrc : ''
+		 
+		  
+	  },
+	  columns : [
+		  
+		  {
+			data:'sid'  
+		  },
+		  
+		  
+		  {
+			  data:'hrt101'
+			 
+			  
+			  
+		  },
+		  {
+			  data:'hrt102'
+			 
+		  },
+		  {
+			  data:'ach105'
+			 
+		  },
+		  {
+			  data:'ame101'
+			 
+		  },
+		  {
+			  data:'ame102'
+			 
+		  },
+		  {
+			  data:'anh101'
+			 
+		  },
+		  {
+			  data:'anh102'
+			 
+		  },
+		  {
+			  data:'ecn101'
+			 
+		  },
+		  {
+			  data:'optionalt'
+			 
+		  },
+		  {
+			  data:'optionals'
+			 
+		  },
+		  {
+			  data:'gpa'
+			 
+		  }
+		  
+		  
+		  
+	  ]
+		
+		
+		
+		
+	});
+	} 
+	
+	
+//for accessing ag l2s1 results
+	
+	var $agAllresults=$('#agAllresultsl2s1');
+	
+	if($agAllresults.length){
+		console.log('inside the table');
+		var jsonUrl='';
+		
+		
+			jsonUrl=jsonURLag;
+			
+
+
+	
+		 $agAllresults.DataTable({
+	  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
+	  pageLength:30,
+	  ajax:{
+		  url:jsonUrl,
+		  dataSrc : ''
+		 
+		  
+	  },
+	  columns : [
+		  
+		  {
+			data:'sid'  
+		  },
+		  
+		  
+		  {
+			  data:'agn201'
+			 
+			  
+			  
+		  },
+		  {
+			  data:'agn202'
+			 
+		  },
+		  {
+			  data:'ssc201'
+			 
+		  },
+		  {
+			  data:'ssc202'
+			 
+		  },
+		  {
+			  data:'hrt201'
+			 
+		  },
+		  {
+			  data:'hrt202'
+			 
+		  },
+		  {
+			  data:'cpe201'
+			 
+		  },
+		  {
+			  data:'cpe202'
+			 
+		  },
+		  {
+			  data:'bmb201'
+			 
+		  },
+		  {
+			  data:'bmb202'
+			 
+		  },
+		  {
+			  data:'gpa'
+			 
+		  }
+		  
+		  
+		  
+	  ]
+		
+		
+		
+		
+	});
+	} 
+	
+//for accessing ag l2s2 results
+	
+	var $agAllresults=$('#agAllresultsl2s2');
+	
+	if($agAllresults.length){
+		console.log('inside the table');
+		var jsonUrl='';
+		
+		
+			jsonUrl=jsonURLag;
+			
+
+
+	
+		 $agAllresults.DataTable({
+	  lengthMenu:[[30,73,-1],['30 files','73 files','All']],
+	  pageLength:30,
+	  ajax:{
+		  url:jsonUrl,
+		  dataSrc : ''
+		 
+		  
+	  },
+	  columns : [
+		  
+		  {
+			data:'sid'  
+		  },
+		  
+		  
+		  {
+			  data:'ent201'
+			 
+			  
+			  
+		  },
+		  {
+			  data:'ent202'
+			 
+		  },
+		  {
+			  data:'plp201'
+			 
+		  },
+		  {
+			  data:'plp202'
+			 
+		  },
+		  {
+			  data:'gpb201'
+			 
+		  },
+		  {
+			  data:'gpb202'
+			 
+		  },
+		  {
+			  data:'aex201'
+			 
+		  },
+		  {
+			  data:'aex202'
+			 
+		  },
+		  {
+			  data:'stt201'
+			 
+		  },
+		  {
+			  data:'stt202'
+			 
+		  },
+		  {
+			  data:'gpa'
+			 
+		  }
+		  
+		  
+		  
+	  ]
+		
+		
+		
+		
+	});
+	} 
 	
 	
 	
