@@ -18,21 +18,18 @@
 
 <title>HSTU ${title}</title>
 <script>
-<!--pass contextRoot to myapp.js-->
+<!--pass contextRoot to myapp  js-->
 window.contextRoot='${contextRoot}';
 
 <!-- pass json url to myapp.js for img ,results notices -->
 
 window.filejsonURL='${contextRoot}/${jsonURL}';
 
-<!--pass json url to myapp.js -->
+<!--pass json url to myapp js -->
 
 window.jsonURLece='${contextRoot}/${EcejsonURL}';
-window.jsonURLag='${contextRoot}/${AgjsonURL}';
 
-
-<!--pass heading to muapp.js file-->
-
+<!--pass heading to muapp js file-->
 window.heading='${heading}';
 </script>
 
@@ -268,95 +265,6 @@ window.heading='${heading}';
 	
 	
 	
-	<!--/////////// ag form and results ////////////-->
-	
-	<!-- ag l1s1 form-->
-	<c:if test="${agL1S1Form==true}">
-	<%@include file="agl1s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ag l1s2 form -->
-	<c:if test="${agL1S2Form==true}">
-	<%@include file="agl1s2enter.jsp" %>
-	
-	
-	</c:if>
-	<!-- ag l2s1 form-->
-	<c:if test="${agL2S1Form==true}">
-	<%@include file="agl2s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ag l2s2 form -->
-	<c:if test="${agL2S2Form==true}">
-	<%@include file="agl2s2enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ag l3s1 form-->
-	<c:if test="${agL3S1Form==true}">
-	<%@include file="agl3s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ag l3s2 form -->
-	<c:if test="${agL3S2Form==true}">
-	<%@include file="agl3s2enter.jsp" %>
-	
-	
-	</c:if>
-	<!-- ag l4s1 form-->
-	<c:if test="${agL4S1Form==true}">
-	<%@include file="agl4s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ag l4s2 form -->
-	<c:if test="${agL4S2Form==true}">
-	<%@include file="agl4s2enter.jsp" %>
-	</c:if>
-	
-	<!-- ag l1s1 results -->
-	<c:if test="${agAllResultsl1s1==true}">
-	<%@include file="agallresultsl1s1.jsp" %>
-	</c:if>
-	<!-- ag l1s2 results -->
-	<c:if test="${agAllResultsl1s2==true}">
-	<%@include file="agallresultsl1s2.jsp" %>
-	</c:if>
-	<!-- ag l2s1 results -->
-	<c:if test="${agAllResultsl2s1==true}">
-	<%@include file="agallresultsl2s1.jsp" %>
-	</c:if>
-	<!-- ag l2s2 results -->
-	<c:if test="${agAllResultsl2s2==true}">
-	<%@include file="agallresultsl2s2.jsp" %>
-	</c:if>
-	
-	
-	
-	<!-- ag l3s1 results -->
-	<c:if test="${agAllResultsl3s1==true}">
-	<%@include file="agallresultsl3s1.jsp" %>
-	</c:if>
-	<!-- ag l3s2 results -->
-	<c:if test="${agAllResultsl3s2==true}">
-	<%@include file="agallresultsl3s2.jsp" %>
-	</c:if>
-	<!-- ag l4s1 results -->
-	<c:if test="${agAllResultsl4s1==true}">
-	<%@include file="agallresultsl4s1.jsp" %>
-	</c:if>
-	<!-- ag l4s2 results -->
-	<c:if test="${agAllResultsl4s2==true}">
-	<%@include file="agallresultsl4s2.jsp" %>
-	</c:if>
 	
 	<!--///////////  form and results ////////////-->
 	

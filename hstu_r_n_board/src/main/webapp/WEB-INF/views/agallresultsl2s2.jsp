@@ -15,8 +15,8 @@
 <th>Introductory Entomology--ENT 202</th>
 <th>Fundamentals of plant pathology and Microbiology--PLP 201</th>
 <th>Fundamentals of plant pathology and Microbiology--PLP 202</th>
-<th>Cytology--CPB 201</th>
-<th>Cytology--CPB 202</th>
+<th>Cytology--GPB 201</th>
+<th>Cytology--GPB 202</th>
 <th>Fundamentals of extension education and communication--AEX 201</th>
 <th>Fundamentals of extension education and communication--AEX 202</th>
 <th>Agricultural Statistics--STT 201</th>

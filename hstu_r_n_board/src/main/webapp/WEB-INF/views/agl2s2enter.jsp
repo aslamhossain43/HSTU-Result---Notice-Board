@@ -68,19 +68,19 @@ modelAttribute="agl2s2add"
 </div>
 
 <div class="form-group">
-<label class="control-label col-md-8">Cytology--CPB 201</label>
+<label class="control-label col-md-8">Cytology--GPB 201</label>
 <div class="col-md-4">
-<sf:input path="cpb201" class="form-control" placeholder=""/>
-<sf:errors path="cpb201" cssClass="help-block" element="em" />
+<sf:input path="gpb201" class="form-control" placeholder=""/>
+<sf:errors path="gpb201" cssClass="help-block" element="em" />
 </div>
 </div>
 
 
 <div class="form-group">
-<label class="control-label col-md-8">Cytology--CPB 202</label>
+<label class="control-label col-md-8">Cytology--GPB 202</label>
 <div class="col-md-4">
-<sf:input path="cpb202" class="form-control" placeholder=""/>
-<sf:errors path="cpb202" cssClass="help-block" element="em" />
+<sf:input path="gpb202" class="form-control" placeholder=""/>
+<sf:errors path="gpb202" cssClass="help-block" element="em" />
 </div>
 </div>
 

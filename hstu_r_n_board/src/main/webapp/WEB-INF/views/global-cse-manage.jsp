@@ -12,14 +12,14 @@ Computer Science & Engineering<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
 
-<li><a>CSE L1 S1</a></li>
-<li><a>CSE L1 S2</a></li>
-<li><a>CSE L2 S1</a></li>
-<li><a>CSE L2 S2</a></li>
-<li><a>CSE L3 S1</a></li>
-<li><a>CSE L3 S2</a></li>
-<li><a>CSE L4 S1</a></li>
-<li><a>CSE L4 S2</a></li>
+<li><a href="${contextRoot}/showCse/cseL1S1Form">CSE L1 S1</a></li>
+<li><a href="${contextRoot}/showCse/cseL1S2Form">CSE L1 S2</a></li>
+<li><a href="${contextRoot}/showCse/cseL2S1Form">CSE L2 S1</a></li>
+<li><a href="${contextRoot}/showCse/cseL2S2Form">CSE L2 S2</a></li>
+<li><a href="${contextRoot}/showCse/cseL3S1Form">CSE L3 S1</a></li>
+<li><a href="${contextRoot}/showCse/cseL3S2Form">CSE L3 S2</a></li>
+<li><a href="${contextRoot}/showCse/cseL4S1Form">CSE L4 S1</a></li>
+<li><a href="${contextRoot}/showCse/cseL4S2Form">CSE L4 S2</a></li>
 
 </ul>
 
@@ -49,14 +49,14 @@ Electronic & Electrical Engineering<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
 
-<li><a>EEE L1 S1</a></li>
-<li><a>EEE L1 S2</a></li>
-<li><a>EEE L2 S1</a></li>
-<li><a>EEE L2 S2</a></li>
-<li><a>EEE L3 S1</a></li>
-<li><a>EEE L3 S2</a></li>
-<li><a>EEE L4 S1</a></li>
-<li><a>EEE L4 S2</a></li>
+<li><a href="${contextRoot}/showEee/eeeL1S1Form">EEE L1 S1</a></li>
+<li><a href="${contextRoot}/showEee/eeeL1S2Form">EEE L1 S2</a></li>
+<li><a href="${contextRoot}/showEee/eeeL2S1Form">EEE L2 S1</a></li>
+<li><a href="${contextRoot}/showEee/eeeL2S2Form">EEE L2 S2</a></li>
+<li><a href="${contextRoot}/showEee/eeeL3S1Form">EEE L3 S1</a></li>
+<li><a href="${contextRoot}/showEee/eeeL3S2Form">EEE L3 S2</a></li>
+<li><a href="${contextRoot}/showEee/eeeL4S1Form">EEE L4 S1</a></li>
+<li><a href="${contextRoot}/showEee/eeeL4S2Form">EEE L4 S2</a></li>
 
 </ul>
 

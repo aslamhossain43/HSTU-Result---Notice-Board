@@ -24,7 +24,7 @@ public class Show_ag {
 		@RequestMapping("/agL1S1Form")
 		public ModelAndView showForml1s1() {
 			
-			ModelAndView mv=new ModelAndView("page");
+			ModelAndView mv=new ModelAndView("page1");
 			mv.addObject("agL1S1Form", true);
 			mv.addObject("title","Agriculture L1 S1");
 			Agl1s1 agL1S1=new Agl1s1();
@@ -37,7 +37,7 @@ public class Show_ag {
 		@RequestMapping("/agL1S2Form")
 		public ModelAndView showForml1s2() {
 			
-			ModelAndView mv=new ModelAndView("page");
+			ModelAndView mv=new ModelAndView("page1");
 			mv.addObject("agL1S2Form", true);
 			mv.addObject("title","Agriculture L1 S2");
 			Agl1s2 agL1S2=new Agl1s2();
@@ -49,7 +49,7 @@ public class Show_ag {
 			@RequestMapping("/agL2S1Form")
 			public ModelAndView showForml2s1() {
 				
-				ModelAndView mv=new ModelAndView("page");
+				ModelAndView mv=new ModelAndView("page1");
 				mv.addObject("agL2S1Form", true);
 				mv.addObject("title","Agriculture L2 S1");
 				Agl2s1 agL2S1=new Agl2s1();
@@ -61,7 +61,7 @@ public class Show_ag {
 			@RequestMapping("/agL2S2Form")
 			public ModelAndView showForml2s2() {
 				
-				ModelAndView mv=new ModelAndView("page");
+				ModelAndView mv=new ModelAndView("page1");
 				mv.addObject("agL2S2Form", true);
 				mv.addObject("title","Agriculture L2 S2");
 				Agl2s2 agL2S2=new Agl2s2();
@@ -72,7 +72,7 @@ public class Show_ag {
 				@RequestMapping("/agL3S1Form")
 				public ModelAndView showForml3s1() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agL3S1Form", true);
 					mv.addObject("title","Agriculture L3 S1");
 					Agl3s1 agL3S1=new Agl3s1();
@@ -83,7 +83,7 @@ public class Show_ag {
 				@RequestMapping("/agL3S2Form")
 				public ModelAndView showForml3s2() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agL3S2Form", true);
 					mv.addObject("title","Agriculture L3 S2");
 					Agl3s2 agL3S2=new Agl3s2();
@@ -94,7 +94,7 @@ public class Show_ag {
 				@RequestMapping("/agL4S1Form")
 				public ModelAndView showForml4s1() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agL4S1Form", true);
 					mv.addObject("title","Agriculture L4 S1");
 					Agl4s1 agL4S1=new Agl4s1();
@@ -105,7 +105,7 @@ public class Show_ag {
 				@RequestMapping("/agL4S2Form")
 				public ModelAndView showForml4s2() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agL4S2Form", true);
 					mv.addObject("title","Agriculture L4 S2");
 					Agl4s2 agL4S2=new Agl4s2();
@@ -118,7 +118,7 @@ public class Show_ag {
 		@RequestMapping("/agL1S1AllResults")
 		public ModelAndView showAgL1S1AllResults() {
 			
-			ModelAndView mv=new ModelAndView("page");
+			ModelAndView mv=new ModelAndView("page1");
 			mv.addObject("agAllResultsl1s1", true);
 			mv.addObject("AgjsonURL", "/jsonAg/allResultsL1S1");
 			mv.addObject("title","Agriculture L1 S1");
@@ -130,7 +130,7 @@ public class Show_ag {
 				@RequestMapping("/agL1S2AllResults")
 				public ModelAndView showAgL1S2AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agAllResultsl1s2", true);
 					mv.addObject("AgjsonURL", "/jsonAg/allResultsL1S2");
 					mv.addObject("title","Agriculture L1 S2");
@@ -143,7 +143,7 @@ public class Show_ag {
 				@RequestMapping("/agL2S1AllResults")
 				public ModelAndView showAgL2S1AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agAllResultsl2s1", true);
 					mv.addObject("AgjsonURL", "/jsonAg/allResultsL2S1");
 					mv.addObject("title","Agriculture L2 S1");
@@ -155,7 +155,7 @@ public class Show_ag {
 				@RequestMapping("/agL2S2AllResults")
 				public ModelAndView showAgL2S2AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agAllResultsl2s2", true);
 					mv.addObject("AgjsonURL", "/jsonAg/allResultsL2S2");
 					mv.addObject("title","Agriculture L2 S2");
@@ -167,7 +167,7 @@ public class Show_ag {
 				@RequestMapping("/agL3S1AllResults")
 				public ModelAndView showAgL3S1AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agAllResultsl3s1", true);
 					mv.addObject("AgjsonURL", "/jsonAg/allResultsL3S1");
 					mv.addObject("title","Agriculture L3 S1");
@@ -179,7 +179,7 @@ public class Show_ag {
 				@RequestMapping("/agL3S2AllResults")
 				public ModelAndView showAgL3S2AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agAllResultsl3s2", true);
 					mv.addObject("AgjsonURL", "/jsonAg/allResultsL3S2");
 					mv.addObject("title","Agriculture L3 S2");
@@ -192,7 +192,7 @@ public class Show_ag {
 				@RequestMapping("/agL4S1AllResults")
 				public ModelAndView showAgL4S1AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agAllResultsl4s1", true);
 					mv.addObject("AgjsonURL", "/jsonAg/allResultsL4S1");
 					mv.addObject("title","Agriculture L4 S1");
@@ -205,7 +205,7 @@ public class Show_ag {
 				@RequestMapping("/agL4S2AllResults")
 				public ModelAndView showAgL4S2AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("page1");
 					mv.addObject("agAllResultsl4s2", true);
 					mv.addObject("AgjsonURL", "/jsonAg/allResultsL4S2");
 					mv.addObject("title","Agriculture L4 S2");

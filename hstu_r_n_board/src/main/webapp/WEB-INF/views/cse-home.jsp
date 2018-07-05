@@ -21,14 +21,14 @@
               
                 <div class="list-group">
                    
-                    <a href="${contextRoot}/cse/resultscse11" class="list-group-item">Results of CSE L-1 S-1</a>
-                   <a href="${contextRoot}/cse/resultscse12" class="list-group-item">Results of CSE L-1 S-2</a>
-                   <a href="${contextRoot}/cse/resultscse21" class="list-group-item">Results of CSE L-2 S-1</a>
-                   <a href="${contextRoot}/cse/resultscse22" class="list-group-item">Results of CSE L-2 S-2</a>
-                   <a href="${contextRoot}/cse/resultscse31" class="list-group-item">Results of CSE L-3 S-1</a>
-                   <a href="${contextRoot}/cse/resultscse32" class="list-group-item">Results of CSE L-3 S-2</a>
-                   <a href="${contextRoot}/cse/resultscse41" class="list-group-item">Results of CSE L-4 S-1</a>
-                   <a href="${contextRoot}/cse/resultscse42" class="list-group-item">Results of CSE L-4 S-2</a>
+                    <a href="${contextRoot}/showCse/cseL1S1AllResults" class="list-group-item">Results of CSE L-1 S-1</a>
+                   <a href="${contextRoot}/showCse/cseL1S2AllResults" class="list-group-item">Results of CSE L-1 S-2</a>
+                   <a href="${contextRoot}/showCse/cseL2S1AllResults" class="list-group-item">Results of CSE L-2 S-1</a>
+                   <a href="${contextRoot}/showCse/cseL2S2AllResults" class="list-group-item">Results of CSE L-2 S-2</a>
+                   <a href="${contextRoot}/showCse/cseL3S1AllResults" class="list-group-item">Results of CSE L-3 S-1</a>
+                   <a href="${contextRoot}/showCse/cseL3S2AllResults" class="list-group-item">Results of CSE L-3 S-2</a>
+                   <a href="${contextRoot}/showCse/cseL4S1AllResults" class="list-group-item">Results of CSE L-4 S-1</a>
+                   <a href="${contextRoot}/showCse/cseL4S2AllResults" class="list-group-item">Results of CSE L-4 S-2</a>
                    
                    
                 
@@ -57,14 +57,14 @@
             <h4>EEE Department</h4>
               
                 <div class="list-group">
-                    <a href="${contextRoot}/cse/resultseee11" class="list-group-item">Results of EEE L-1 S-1</a>
-                   <a href="${contextRoot}/cse/resultseee12" class="list-group-item">Results of EEE L-1 S-2</a>
-                   <a href="${contextRoot}/cse/resultseee21" class="list-group-item">Results of EEE L-2 S-1</a>
-                   <a href="${contextRoot}/cse/resultseee22" class="list-group-item">Results of EEE L-2 S-2</a>
-                   <a href="${contextRoot}/cse/resultseee31" class="list-group-item">Results of EEE L-3 S-1</a>
-                   <a href="${contextRoot}/cse/resultseee32" class="list-group-item">Results of EEE L-3 S-2</a>
-                   <a href="${contextRoot}/cse/resultseee41" class="list-group-item">Results of EEE L-4 S-1</a>
-                   <a href="${contextRoot}/cse/resultseee42" class="list-group-item">Results of EEE L-4 S-2</a>
+                    <a href="${contextRoot}/showEee/eeeL1S1AllResults" class="list-group-item">Results of EEE L-1 S-1</a>
+                   <a href="${contextRoot}/showEee/eeeL1S2AllResults" class="list-group-item">Results of EEE L-1 S-2</a>
+                   <a href="${contextRoot}/showEee/eeeL2S1AllResults" class="list-group-item">Results of EEE L-2 S-1</a>
+                   <a href="${contextRoot}/showEee/eeeL2S2AllResults" class="list-group-item">Results of EEE L-2 S-2</a>
+                   <a href="${contextRoot}/showEee/eeeL3S1AllResults" class="list-group-item">Results of EEE L-3 S-1</a>
+                   <a href="${contextRoot}/showEee/eeeL3S2AllResults" class="list-group-item">Results of EEE L-3 S-2</a>
+                   <a href="${contextRoot}/showEee/eeeL4S1AllResults" class="list-group-item">Results of EEE L-4 S-1</a>
+                   <a href="${contextRoot}/showEee/eeeL4S2AllResults" class="list-group-item">Results of EEE L-4 S-2</a>
                     
                 
                 </div>

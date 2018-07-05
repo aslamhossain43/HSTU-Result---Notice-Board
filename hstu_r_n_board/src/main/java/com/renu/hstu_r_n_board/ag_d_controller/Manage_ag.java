@@ -20,6 +20,10 @@ import com.renu.hstu_r_n_board_backend.dto.Agl1s1;
 import com.renu.hstu_r_n_board_backend.dto.Agl1s2;
 import com.renu.hstu_r_n_board_backend.dto.Agl2s1;
 import com.renu.hstu_r_n_board_backend.dto.Agl2s2;
+import com.renu.hstu_r_n_board_backend.dto.Agl3s1;
+import com.renu.hstu_r_n_board_backend.dto.Agl3s2;
+import com.renu.hstu_r_n_board_backend.dto.Agl4s1;
+import com.renu.hstu_r_n_board_backend.dto.Agl4s2;
 
 @Controller
 @RequestMapping("/manageAg")
@@ -58,7 +62,7 @@ public class Manage_ag {
 		if (bindingResult.hasErrors()) {
 			model.addAttribute("message", "Failed your operation !");
 			model.addAttribute("agL1S1Form", true);
-			return "page";
+			return "page1";
 		}
 		if (agl1s1.getId() == 0) {
 			
@@ -95,7 +99,7 @@ public class Manage_ag {
 		}
 		model.addAttribute("message", "Operation has been completed successfully !");
 		model.addAttribute("agL1S1Form", true);
-		return "page";
+		return "page1";
 	
 	
 	}
@@ -113,7 +117,7 @@ public class Manage_ag {
 			if (bindingResult.hasErrors()) {
 				model.addAttribute("message", "Failed your operation !");
 				model.addAttribute("agL1S2Form", true);
-				return "page";
+				return "page1";
 			}
 			if (agl1s2.getId() == 0) {
 				
@@ -152,7 +156,7 @@ public class Manage_ag {
 			}
 			model.addAttribute("message", "Operation has been completed successfully !");
 			model.addAttribute("agL1S2Form", true);
-			return "page";
+			return "page1";
 		
 		
 		}
@@ -170,7 +174,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL2S1Form", true);
-					return "page";
+					return "page1";
 				}
 				if (agl2s1.getId() == 0) {
 					
@@ -209,7 +213,7 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL2S1Form", true);
-				return "page";
+				return "page1";
 			
 			
 			}
@@ -227,7 +231,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL2S2Form", true);
-					return "page";
+					return "page1";
 				}
 				if (agl2s2.getId() == 0) {
 					
@@ -266,13 +270,244 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL2S2Form", true);
-				return "page";
+				return "page1";
 			
 			
 			}
 			
 			
+//l3s1
+			
+			@RequestMapping(value = "/agL3S1Add", method = RequestMethod.POST)
+			public String eceL3S1Add(@ModelAttribute("agl3s1add") Agl3s1 agl3s1, BindingResult bindingResult,
+					Model model) {
+				
+				
+				 double gpa = 0;
+				 double sum = 0;
+				 double total_credits=24;
+				if (bindingResult.hasErrors()) {
+					model.addAttribute("message", "Failed your operation !");
+					model.addAttribute("agL3S1Form", true);
+					return "page1";
+				}
+				if (agl3s1.getId() == 0) {
+					
+		               if (agl3s1.getEnt301()==0) {
+						total_credits-=3.00;
+					}
+		               if (agl3s1.getEnt302()==0) {
+		   				total_credits-=2;
+		   			}if (agl3s1.getPlp301()==0) {
+						total_credits-=3.00;
+					}if (agl3s1.getPlp302()==0) {
+						total_credits-=2.00;
+					}if (agl3s1.getGpb301()==0) {
+						total_credits-=3;
+					}if (agl3s1.getGpb302()==0) {
+						total_credits-=2.00;
+					}if (agl3s1.getAex301()==0) {
+						total_credits-=2.00;
+					}if (agl3s1.getAex302()==0) {
+						total_credits-=2;
+					}if (agl3s1.getAgf301()==0) {
+						total_credits-=3;
+					}if (agl3s1.getAgf302()==0) {
+						total_credits-=2;
+					}
+					sum=agl3s1.getEnt301()*(3.00)+agl3s1.getEnt302()*(2)+agl3s1.getPlp301()*(3.00)+agl3s1.getPlp302()*(2.00)
+							+agl3s1.getGpb301()*(3)+agl3s1.getGpb302()*(2.00)+agl3s1.getAex301()*(2.00)
+							+agl3s1.getAex302()*(2)+agl3s1.getAgf301()*(3)+agl3s1.getAgf302()*(2);
+					
+					gpa=(sum)/(total_credits);
+					
+					agl3s1.setGpa(gpa);
+					daoAgl3s1.aglL3S1Add(agl3s1);
+					
+
+				}
+				model.addAttribute("message", "Operation has been completed successfully !");
+				model.addAttribute("agL3S1Form", true);
+				return "page1";
+			
+			
+			}
+			
+			
+//l3s2
+			
+			@RequestMapping(value = "/agL3S2Add", method = RequestMethod.POST)
+			public String eceL3S2Add(@ModelAttribute("agl3s2add") Agl3s2 agl3s2, BindingResult bindingResult,
+					Model model) {
+				
+				
+				 double gpa = 0;
+				 double sum = 0;
+				 double total_credits=25;
+				if (bindingResult.hasErrors()) {
+					model.addAttribute("message", "Failed your operation !");
+					model.addAttribute("agL3S2Form", true);
+					return "page1";
+				}
+				if (agl3s2.getId() == 0) {
+					
+		               if (agl3s2.getAgn301()==0) {
+						total_credits-=3.00;
+					}
+		               if (agl3s2.getAgn302()==0) {
+		   				total_credits-=2;
+		   			}if (agl3s2.getSsc301()==0) {
+						total_credits-=3.00;
+					}if (agl3s2.getSsc302()==0) {
+						total_credits-=2.00;
+					}if (agl3s2.getAch301()==0) {
+						total_credits-=3;
+					}if (agl3s2.getAch302()==0) {
+						total_credits-=2.00;
+					}if (agl3s2.getHrt301()==0) {
+						total_credits-=3.00;
+					}if (agl3s2.getHrt302()==0) {
+						total_credits-=2;
+					}if (agl3s2.getCbt301()==0) {
+						total_credits-=3;
+					}if (agl3s2.getCbt302()==0) {
+						total_credits-=2;
+					}
+					sum=agl3s2.getAgn301()*(3.00)+agl3s2.getAgn302()*(2)+agl3s2.getSsc301()*(3.00)+agl3s2.getSsc302()*(2.00)
+							+agl3s2.getAch301()*(3)+agl3s2.getAch302()*(2.00)+agl3s2.getHrt301()*(3.00)
+							+agl3s2.getHrt302()*(2)+agl3s2.getCbt301()*(3)+agl3s2.getCbt302()*(2);
+					
+					gpa=(sum)/(total_credits);
+					
+					agl3s2.setGpa(gpa);
+					daoAgl3s2.aglL3S2Add(agl3s2);
+					
+
+				}
+				model.addAttribute("message", "Operation has been completed successfully !");
+				model.addAttribute("agL3S2Form", true);
+				return "page1";
+			
+			
+			}
+			
+			
+//l4s1
+			
+			@RequestMapping(value = "/agL4S1Add", method = RequestMethod.POST)
+			public String eceL4S1Add(@ModelAttribute("agl4s1add") Agl4s1 agl4s1, BindingResult bindingResult,
+					Model model) {
+				
+				
+				 double gpa = 0;
+				 double sum = 0;
+				 double total_credits=24;
+				if (bindingResult.hasErrors()) {
+					model.addAttribute("message", "Failed your operation !");
+					model.addAttribute("agL4S1Form", true);
+					return "page1";
+				}
+				if (agl4s1.getId() == 0) {
+					
+		               if (agl4s1.getEnt401()==0) {
+						total_credits-=3.00;
+					}
+		               if (agl4s1.getEnt402()==0) {
+		   				total_credits-=2;
+		   			}if (agl4s1.getCbt401()==0) {
+						total_credits-=3.00;
+					}if (agl4s1.getCbt402()==0) {
+						total_credits-=2.00;
+					}if (agl4s1.getAex401()==0) {
+						total_credits-=3;
+					}if (agl4s1.getAex402()==0) {
+						total_credits-=2.00;
+					}if (agl4s1.getHrt401()==0) {
+						total_credits-=3.00;
+					}if (agl4s1.getHrt402()==0) {
+						total_credits-=2;
+					}if (agl4s1.getEffectivet()==0) {
+						total_credits-=2;
+					}if (agl4s1.getEffectives()==0) {
+						total_credits-=2;
+					}
+					sum=agl4s1.getEnt401()*(3.00)+agl4s1.getEnt402()*(2)+agl4s1.getCbt401()*(3.00)+agl4s1.getCbt402()*(2.00)
+							+agl4s1.getAex401()*(3)+agl4s1.getAex402()*(2.00)+agl4s1.getHrt401()*(3.00)
+							+agl4s1.getHrt402()*(2)+agl4s1.getEffectivet()*(2)+agl4s1.getEffectives()*(2);
+					
+					gpa=(sum)/(total_credits);
+					
+					agl4s1.setGpa(gpa);
+					daoAgl4s1.aglL4S1Add(agl4s1);
+					
+
+				}
+				model.addAttribute("message", "Operation has been completed successfully !");
+				model.addAttribute("agL4S1Form", true);
+				return "page1";
+			
+			
+			}
+			
 	
+			
+//l4s2
+			
+			@RequestMapping(value = "/agL4S2Add", method = RequestMethod.POST)
+			public String eceL4S2Add(@ModelAttribute("agl4s2add") Agl4s2 agl4s2, BindingResult bindingResult,
+					Model model) {
+				
+				
+				 double gpa = 0;
+				 double sum = 0;
+				 double total_credits=24;
+				if (bindingResult.hasErrors()) {
+					model.addAttribute("message", "Failed your operation !");
+					model.addAttribute("agL4S2Form", true);
+					return "page1";
+				}
+				if (agl4s2.getId() == 0) {
+					
+		               if (agl4s2.getAgn401()==0) {
+						total_credits-=3.00;
+					}
+		               if (agl4s2.getAgn402()==0) {
+		   				total_credits-=2;
+		   			}if (agl4s2.getSsc401()==0) {
+						total_credits-=3.00;
+					}if (agl4s2.getSsc402()==0) {
+						total_credits-=2.00;
+					}if (agl4s2.getPlp401()==0) {
+						total_credits-=3;
+					}if (agl4s2.getPlp402()==0) {
+						total_credits-=2.00;
+					}if (agl4s2.getGpb401()==0) {
+						total_credits-=3.00;
+					}if (agl4s2.getGpb402()==0) {
+						total_credits-=2;
+					}if (agl4s2.getEffectivet()==0) {
+						total_credits-=2;
+					}if (agl4s2.getEffectives()==0) {
+						total_credits-=2;
+					}
+					sum=agl4s2.getAgn401()*(3.00)+agl4s2.getAgn402()*(2)+agl4s2.getSsc401()*(3.00)+agl4s2.getSsc402()*(2.00)
+							+agl4s2.getPlp401()*(3)+agl4s2.getPlp402()*(2.00)+agl4s2.getGpb401()*(3.00)
+							+agl4s2.getGpb402()*(2)+agl4s2.getEffectivet()*(2)+agl4s2.getEffectives()*(2);
+					
+					gpa=(sum)/(total_credits);
+					
+					agl4s2.setGpa(gpa);
+					daoAgl4s2.aglL4S2Add(agl4s2);
+					
+
+				}
+				model.addAttribute("message", "Operation has been completed successfully !");
+				model.addAttribute("agL4S2Form", true);
+				return "page1";
+			
+			
+			}
+			
 	
 	
 	
