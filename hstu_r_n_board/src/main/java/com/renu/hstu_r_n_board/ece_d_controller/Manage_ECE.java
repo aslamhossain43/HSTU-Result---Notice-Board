@@ -62,7 +62,7 @@ public class Manage_ECE {
 		if (bindingResult.hasErrors()) {
 			model.addAttribute("message", "Failed your operation !");
 			model.addAttribute("eceL1S1Form", true);
-			return "page";
+			return "mece";
 		}
 		if (eceL1S1.getId() == 0) {
 			
@@ -95,7 +95,7 @@ public class Manage_ECE {
 		}
 		model.addAttribute("message", "Operation has been completed successfully !");
 		model.addAttribute("eceL1S1Form", true);
-		return "page";
+		return "mece";
 	
 	
 	}
@@ -111,7 +111,7 @@ public class Manage_ECE {
 			if (bindingResult.hasErrors()) {
 				model.addAttribute("message", "Failed your operation !");
 				model.addAttribute("eceL1S2Form", true);
-				return "page";
+				return "mece";
 			}
 			if (eceL1S2.getId() == 0) {
 				
@@ -148,7 +148,7 @@ public class Manage_ECE {
 			}
 			model.addAttribute("message", "Operation has been completed successfully !");
 			model.addAttribute("eceL1S2Form", true);
-			return "page";
+			return "mece";
 		}
 	
 		//l2s1
@@ -163,7 +163,7 @@ public class Manage_ECE {
 					if (bindingResult.hasErrors()) {
 						model.addAttribute("message", "Failed your operation !");
 						model.addAttribute("eceL2S1Form", true);
-						return "page";
+						return "mece";
 					}
 					if (eceL2S1.getId() == 0) {
 						
@@ -205,7 +205,7 @@ public class Manage_ECE {
 					}
 					model.addAttribute("message", "Operation has been completed successfully !");
 					model.addAttribute("eceL2S1Form", true);
-					return "page";
+					return "mece";
 				}
 			
 			
@@ -221,7 +221,7 @@ public class Manage_ECE {
 					if (bindingResult.hasErrors()) {
 						model.addAttribute("message", "Failed your operation !");
 						model.addAttribute("eceL2S2Form", true);
-						return "page";
+						return "mece";
 					}
 					if (eceL2S2.getId() == 0) {
 						
@@ -265,7 +265,7 @@ public class Manage_ECE {
 					}
 					model.addAttribute("message", "Operation has been completed successfully !");
 					model.addAttribute("eceL2S2Form", true);
-					return "page";
+					return "mece";
 				}
 			
 			
@@ -281,7 +281,7 @@ public class Manage_ECE {
 					if (bindingResult.hasErrors()) {
 						model.addAttribute("message", "Failed your operation !");
 						model.addAttribute("eceL3S1Form", true);
-						return "page";
+						return "mece";
 					}
 					if (eceL3S1.getId() == 0) {
 						
@@ -323,7 +323,7 @@ public class Manage_ECE {
 					}
 					model.addAttribute("message", "Operation has been completed successfully !");
 					model.addAttribute("eceL3S1Form", true);
-					return "page";
+					return "mece";
 				}
 			
 				//l3s2
@@ -338,7 +338,7 @@ public class Manage_ECE {
 					if (bindingResult.hasErrors()) {
 						model.addAttribute("message", "Failed your operation !");
 						model.addAttribute("eceL3S2Form", true);
-						return "page";
+						return "mece";
 					}
 					if (eceL3S2.getId() == 0) {
 						
@@ -379,7 +379,7 @@ public class Manage_ECE {
 					}
 					model.addAttribute("message", "Operation has been completed successfully !");
 					model.addAttribute("eceL3S2Form", true);
-					return "page";
+					return "mece";
 				}
 			
 				//l4s1
@@ -394,7 +394,7 @@ public class Manage_ECE {
 					if (bindingResult.hasErrors()) {
 						model.addAttribute("message", "Failed your operation !");
 						model.addAttribute("eceL4S1Form", true);
-						return "page";
+						return "mece";
 					}
 					if (eceL4S1.getId() == 0) {
 						
@@ -436,7 +436,7 @@ public class Manage_ECE {
 					}
 					model.addAttribute("message", "Operation has been completed successfully !");
 					model.addAttribute("eceL4S1Form", true);
-					return "page";
+					return "mece";
 				}
 			
 	
@@ -452,7 +452,7 @@ public class Manage_ECE {
 					if (bindingResult.hasErrors()) {
 						model.addAttribute("message", "Failed your operation !");
 						model.addAttribute("eceL4S2Form", true);
-						return "page";
+						return "mece";
 					}
 					if (eceL4S2.getId() == 0) {
 						
@@ -492,7 +492,7 @@ public class Manage_ECE {
 					}
 					model.addAttribute("message", "Operation has been completed successfully !");
 					model.addAttribute("eceL4S2Form", true);
-					return "page";
+					return "mece";
 				}
 			
 	

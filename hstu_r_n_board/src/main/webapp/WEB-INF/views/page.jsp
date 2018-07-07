@@ -27,8 +27,6 @@ window.filejsonURL='${contextRoot}/${jsonURL}';
 
 <!--pass json url to myapp js -->
 
-window.jsonURLece='${contextRoot}/${EcejsonURL}';
-
 <!--pass heading to muapp js file-->
 window.heading='${heading}';
 </script>
@@ -171,95 +169,6 @@ window.heading='${heading}';
 	<!-- Manage File Notices -->
 	<c:if test="${manageFileNotices==true}">
 	<%@include file="manage-notices.jsp" %>
-	</c:if>
-	
-	<!--/////////// ece form and results ////////////-->
-	<!-- ece l1s1 form-->
-	<c:if test="${eceL1S1Form==true}">
-	<%@include file="ecel1s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ece l1s2 form -->
-	<c:if test="${eceL1S2Form==true}">
-	<%@include file="ecel1s2enter.jsp" %>
-	
-	
-	</c:if>
-	<!-- ece l2s1 form-->
-	<c:if test="${eceL2S1Form==true}">
-	<%@include file="ecel2s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ece l2s2 form -->
-	<c:if test="${eceL2S2Form==true}">
-	<%@include file="ecel2s2enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ece l3s1 form-->
-	<c:if test="${eceL3S1Form==true}">
-	<%@include file="ecel3s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ece l3s2 form -->
-	<c:if test="${eceL3S2Form==true}">
-	<%@include file="ecel3s2enter.jsp" %>
-	
-	
-	</c:if>
-	<!-- ece l4s1 form-->
-	<c:if test="${eceL4S1Form==true}">
-	<%@include file="ecel4s1enter.jsp" %>
-	
-	
-	</c:if>
-	
-	<!-- ece l4s2 form -->
-	<c:if test="${eceL4S2Form==true}">
-	<%@include file="ecel4s2enter.jsp" %>
-	</c:if>
-	
-	<!-- ece l1s1 results -->
-	<c:if test="${eceAllResultsl1s1==true}">
-	<%@include file="eceallresultsl1s1.jsp" %>
-	</c:if>
-	<!-- ece l1s2 results -->
-	<c:if test="${eceAllResultsl1s2==true}">
-	<%@include file="eceallresultsl1s2.jsp" %>
-	</c:if>
-	<!-- ece l2s1 results -->
-	<c:if test="${eceAllResultsl2s1==true}">
-	<%@include file="eceallresultsl2s1.jsp" %>
-	</c:if>
-	<!-- ece l2s2 results -->
-	<c:if test="${eceAllResultsl2s2==true}">
-	<%@include file="eceallresultsl2s2.jsp" %>
-	</c:if>
-	
-	
-	
-	<!-- ece l3s1 results -->
-	<c:if test="${eceAllResultsl3s1==true}">
-	<%@include file="eceallresultsl3s1.jsp" %>
-	</c:if>
-	<!-- ece l3s2 results -->
-	<c:if test="${eceAllResultsl3s2==true}">
-	<%@include file="eceallresultsl3s2.jsp" %>
-	</c:if>
-	<!-- ece l4s1 results -->
-	<c:if test="${eceAllResultsl4s1==true}">
-	<%@include file="eceallresultsl4s1.jsp" %>
-	</c:if>
-	<!-- ece l4s2 results -->
-	<c:if test="${eceAllResultsl4s2==true}">
-	<%@include file="eceallresultsl4s2.jsp" %>
 	</c:if>
 	
 	

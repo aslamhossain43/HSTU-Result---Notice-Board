@@ -63,7 +63,7 @@ public class Manage_EEE {
 		if (bindingResult.hasErrors()) {
 			model.addAttribute("message", "Failed your operation !");
 			model.addAttribute("eeeL1S1Form", true);
-			return "page2";
+			return "meee";
 		}
 		if (eeeL1S1.getId() == 0) {
 			
@@ -103,7 +103,7 @@ public class Manage_EEE {
 		}
 		model.addAttribute("message", "Operation has been completed successfully !");
 		model.addAttribute("eeeL1S1Form", true);
-		return "page2";
+		return "meee";
 	
 	
 	}
@@ -121,7 +121,7 @@ public class Manage_EEE {
 			if (bindingResult.hasErrors()) {
 				model.addAttribute("message", "Failed your operation !");
 				model.addAttribute("eeeL1S2Form", true);
-				return "page2";
+				return "meee";
 			}
 			if (eeeL1S2.getId() == 0) {
 				
@@ -161,7 +161,7 @@ public class Manage_EEE {
 			}
 			model.addAttribute("message", "Operation has been completed successfully !");
 			model.addAttribute("eeeL1S2Form", true);
-			return "page2";
+			return "meee";
 		
 		
 		}
@@ -180,7 +180,7 @@ public class Manage_EEE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("eeeL2S1Form", true);
-					return "page2";
+					return "meee";
 				}
 				if (eeeL2S1.getId() == 0) {
 					
@@ -217,7 +217,7 @@ public class Manage_EEE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("eeeL2S1Form", true);
-				return "page2";
+				return "meee";
 			
 			
 			}
@@ -236,7 +236,7 @@ public class Manage_EEE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("eeeL2S2Form", true);
-					return "page2";
+					return "meee";
 				}
 				if (eeeL2S2.getId() == 0) {
 					
@@ -276,7 +276,7 @@ public class Manage_EEE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("eeeL2S2Form", true);
-				return "page2";
+				return "meee";
 			
 			
 			}
@@ -295,7 +295,7 @@ public class Manage_EEE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("eeeL3S1Form", true);
-					return "page2";
+					return "meee";
 				}
 				if (eeeL3S1.getId() == 0) {
 					
@@ -335,7 +335,7 @@ public class Manage_EEE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("eeeL3S1Form", true);
-				return "page2";
+				return "meee";
 			
 			
 			}
@@ -353,7 +353,7 @@ public class Manage_EEE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("eeeL3S2Form", true);
-					return "page2";
+					return "meee";
 				}
 				if (eeeL3S2.getId() == 0) {
 					
@@ -393,7 +393,7 @@ public class Manage_EEE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("eeeL3S2Form", true);
-				return "page2";
+				return "meee";
 			
 			
 			}
@@ -412,7 +412,7 @@ public class Manage_EEE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("eeeL4S1Form", true);
-					return "page2";
+					return "meee";
 				}
 				if (eeeL4S1.getId() == 0) {
 					
@@ -444,7 +444,7 @@ public class Manage_EEE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("eeeL4S1Form", true);
-				return "page2";
+				return "meee";
 			
 			
 			}
@@ -463,7 +463,7 @@ public class Manage_EEE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("eeeL4S2Form", true);
-					return "page2";
+					return "meee";
 				}
 				if (eeeL4S2.getId() == 0) {
 					
@@ -498,7 +498,7 @@ public class Manage_EEE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("eeeL4S2Form", true);
-				return "page2";
+				return "meee";
 			
 			
 			}

@@ -22,7 +22,7 @@ public class Show_ECE {
 	@RequestMapping("/eceL1S1Form")
 	public ModelAndView showForml1s1() {
 		
-		ModelAndView mv=new ModelAndView("page");
+		ModelAndView mv=new ModelAndView("mece");
 		mv.addObject("eceL1S1Form", true);
 		mv.addObject("title","ECE L1 S1");
 		EceL1S1 eceL1S1=new EceL1S1();
@@ -35,7 +35,7 @@ public class Show_ECE {
 	@RequestMapping("/eceL1S2Form")
 	public ModelAndView showForml1s2() {
 		
-		ModelAndView mv=new ModelAndView("page");
+		ModelAndView mv=new ModelAndView("mece");
 		mv.addObject("eceL1S2Form", true);
 		mv.addObject("title","ECE L1 S2");
 		EceL1S2 eceL1S2=new EceL1S2();
@@ -47,7 +47,7 @@ public class Show_ECE {
 		@RequestMapping("/eceL2S1Form")
 		public ModelAndView showForml2s1() {
 			
-			ModelAndView mv=new ModelAndView("page");
+			ModelAndView mv=new ModelAndView("mece");
 			mv.addObject("eceL2S1Form", true);
 			mv.addObject("title","ECE L2 S1");
 			EceL2S1 eceL2S1=new EceL2S1();
@@ -59,7 +59,7 @@ public class Show_ECE {
 		@RequestMapping("/eceL2S2Form")
 		public ModelAndView showForml2s2() {
 			
-			ModelAndView mv=new ModelAndView("page");
+			ModelAndView mv=new ModelAndView("mece");
 			mv.addObject("eceL2S2Form", true);
 			mv.addObject("title","ECE L2 S2");
 			EceL2S2 eceL2S2=new EceL2S2();
@@ -72,7 +72,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL3S1Form")
 				public ModelAndView showForml3s1() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceL3S1Form", true);
 					mv.addObject("title","ECE L3 S1");
 					EceL3S1 eceL3S1=new EceL3S1();
@@ -84,7 +84,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL3S2Form")
 				public ModelAndView showForml3s2() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceL3S2Form", true);
 					mv.addObject("title","ECE L3 S2");
 					EceL3S2 eceL3S2=new EceL3S2();
@@ -97,7 +97,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL4S1Form")
 				public ModelAndView showForml4s1() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceL4S1Form", true);
 					mv.addObject("title","ECE L4 S1");
 					EceL4S1 eceL4S1=new EceL4S1();
@@ -109,7 +109,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL4S2Form")
 				public ModelAndView showForml4s2() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceL4S2Form", true);
 					mv.addObject("title","ECE L4 S2");
 					EceL4S2 eceL4S2=new EceL4S2();
@@ -123,7 +123,7 @@ public class Show_ECE {
 	@RequestMapping("/eceL1S1AllResults")
 	public ModelAndView showeceL1S1AllResults() {
 		
-		ModelAndView mv=new ModelAndView("page");
+		ModelAndView mv=new ModelAndView("mece");
 		mv.addObject("eceAllResultsl1s1", true);
 		mv.addObject("EcejsonURL", "/jsonEce/allResultsL1S1");
 		mv.addObject("title","ECE L1 S1");
@@ -135,7 +135,7 @@ public class Show_ECE {
 		@RequestMapping("/eceL1S2AllResults")
 		public ModelAndView showeceL1S2AllResults() {
 			
-			ModelAndView mv=new ModelAndView("page");
+			ModelAndView mv=new ModelAndView("mece");
 			mv.addObject("eceAllResultsl1s2", true);
 			mv.addObject("EcejsonURL", "/jsonEce/allResultsL1S2");
 			mv.addObject("title","ECE L1 S2");
@@ -147,7 +147,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL2S1AllResults")
 				public ModelAndView showeceL2S1AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceAllResultsl2s1", true);
 					mv.addObject("EcejsonURL", "/jsonEce/allResultsL2S1");
 					mv.addObject("title","ECE L2 S1");
@@ -159,7 +159,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL2S2AllResults")
 				public ModelAndView showeceL2S2AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceAllResultsl2s2", true);
 					mv.addObject("EcejsonURL", "/jsonEce/allResultsL2S2");
 					mv.addObject("title","ECE L2 S2");
@@ -171,7 +171,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL3S1AllResults")
 				public ModelAndView showeceL3S1AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceAllResultsl3s1", true);
 					mv.addObject("EcejsonURL", "/jsonEce/allResultsL3S1");
 					mv.addObject("title","ECE L3 S1");
@@ -183,7 +183,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL3S2AllResults")
 				public ModelAndView showeceL3S2AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceAllResultsl3s2", true);
 					mv.addObject("EcejsonURL", "/jsonEce/allResultsL3S2");
 					mv.addObject("title","ECE L3 S2");
@@ -196,7 +196,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL4S1AllResults")
 				public ModelAndView showeceL4S1AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceAllResultsl4s1", true);
 					mv.addObject("EcejsonURL", "/jsonEce/allResultsL4S1");
 					mv.addObject("title","ECE L4 S1");
@@ -209,7 +209,7 @@ public class Show_ECE {
 				@RequestMapping("/eceL4S2AllResults")
 				public ModelAndView showeceL4S2AllResults() {
 					
-					ModelAndView mv=new ModelAndView("page");
+					ModelAndView mv=new ModelAndView("mece");
 					mv.addObject("eceAllResultsl4s2", true);
 					mv.addObject("EcejsonURL", "/jsonEce/allResultsL4S2");
 					mv.addObject("title","ECE L4 S2");

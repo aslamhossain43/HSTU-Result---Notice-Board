@@ -62,7 +62,7 @@ public class Manage_ag {
 		if (bindingResult.hasErrors()) {
 			model.addAttribute("message", "Failed your operation !");
 			model.addAttribute("agL1S1Form", true);
-			return "page1";
+			return "mag";
 		}
 		if (agl1s1.getId() == 0) {
 			
@@ -99,7 +99,7 @@ public class Manage_ag {
 		}
 		model.addAttribute("message", "Operation has been completed successfully !");
 		model.addAttribute("agL1S1Form", true);
-		return "page1";
+		return "mag";
 	
 	
 	}
@@ -117,7 +117,7 @@ public class Manage_ag {
 			if (bindingResult.hasErrors()) {
 				model.addAttribute("message", "Failed your operation !");
 				model.addAttribute("agL1S2Form", true);
-				return "page1";
+				return "mag";
 			}
 			if (agl1s2.getId() == 0) {
 				
@@ -156,7 +156,7 @@ public class Manage_ag {
 			}
 			model.addAttribute("message", "Operation has been completed successfully !");
 			model.addAttribute("agL1S2Form", true);
-			return "page1";
+			return "mag";
 		
 		
 		}
@@ -174,7 +174,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL2S1Form", true);
-					return "page1";
+					return "mag";
 				}
 				if (agl2s1.getId() == 0) {
 					
@@ -213,7 +213,7 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL2S1Form", true);
-				return "page1";
+				return "mag";
 			
 			
 			}
@@ -231,7 +231,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL2S2Form", true);
-					return "page1";
+					return "mag";
 				}
 				if (agl2s2.getId() == 0) {
 					
@@ -270,7 +270,7 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL2S2Form", true);
-				return "page1";
+				return "mag";
 			
 			
 			}
@@ -289,7 +289,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL3S1Form", true);
-					return "page1";
+					return "mag";
 				}
 				if (agl3s1.getId() == 0) {
 					
@@ -328,7 +328,7 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL3S1Form", true);
-				return "page1";
+				return "mag";
 			
 			
 			}
@@ -347,7 +347,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL3S2Form", true);
-					return "page1";
+					return "mag";
 				}
 				if (agl3s2.getId() == 0) {
 					
@@ -386,7 +386,7 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL3S2Form", true);
-				return "page1";
+				return "mag";
 			
 			
 			}
@@ -405,7 +405,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL4S1Form", true);
-					return "page1";
+					return "mag";
 				}
 				if (agl4s1.getId() == 0) {
 					
@@ -444,7 +444,7 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL4S1Form", true);
-				return "page1";
+				return "mag";
 			
 			
 			}
@@ -464,7 +464,7 @@ public class Manage_ag {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("agL4S2Form", true);
-					return "page1";
+					return "mag";
 				}
 				if (agl4s2.getId() == 0) {
 					
@@ -503,7 +503,7 @@ public class Manage_ag {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("agL4S2Form", true);
-				return "page1";
+				return "mag";
 			
 			
 			}

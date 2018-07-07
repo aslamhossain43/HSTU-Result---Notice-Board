@@ -29,7 +29,6 @@ window.filejsonURL='${contextRoot}/${jsonURL}';
 window.jsonURLag='${contextRoot}/${AgjsonURL}';
 
 
-
 <!--pass heading to muapp js file-->
 window.heading='${heading}';
 </script>
@@ -154,6 +153,7 @@ window.heading='${heading}';
 	
 	
 	
+	
 	<!--///////////  form and results ////////////-->
 	
 	
@@ -187,7 +187,7 @@ window.heading='${heading}';
    
     
     <!-- custom js -->
-	<script src="${js}/myapp.js"></script>
+	<script src="${js}/myappag.js"></script>
 	
 </div>
 

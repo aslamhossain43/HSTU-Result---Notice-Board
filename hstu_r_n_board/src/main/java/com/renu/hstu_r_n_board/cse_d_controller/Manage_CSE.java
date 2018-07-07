@@ -69,7 +69,7 @@ public class Manage_CSE {
 			if (bindingResult.hasErrors()) {
 				model.addAttribute("message", "Failed your operation !");
 				model.addAttribute("cseL1S1Form", true);
-				return "page2";
+				return "mcse";
 			}
 			if (csel1s1.getId() == 0) {
 				
@@ -108,7 +108,7 @@ public class Manage_CSE {
 			}
 			model.addAttribute("message", "Operation has been completed successfully !");
 			model.addAttribute("cseL1S1Form", true);
-			return "page2";
+			return "mcse";
 		
 		
 		}
@@ -125,7 +125,7 @@ public class Manage_CSE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("cseL1S2Form", true);
-					return "page2";
+					return "mcse";
 				}
 				if (csel1s2.getId() == 0) {
 					
@@ -164,7 +164,7 @@ public class Manage_CSE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("cseL1S2Form", true);
-				return "page2";
+				return "mcse";
 			
 			
 			}
@@ -184,7 +184,7 @@ public class Manage_CSE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("cseL2S1Form", true);
-					return "page2";
+					return "mcse";
 				}
 				if (csel2s1.getId() == 0) {
 					
@@ -227,7 +227,7 @@ public class Manage_CSE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("cseL2S1Form", true);
-				return "page2";
+				return "mcse";
 			
 			
 			}
@@ -246,7 +246,7 @@ public class Manage_CSE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("cseL2S2Form", true);
-					return "page2";
+					return "mcse";
 				}
 				if (csel2s2.getId() == 0) {
 					
@@ -294,7 +294,7 @@ public class Manage_CSE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("cseL2S2Form", true);
-				return "page2";
+				return "mcse";
 			
 			
 			}
@@ -314,7 +314,7 @@ public class Manage_CSE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("cseL3S1Form", true);
-					return "page2";
+					return "mcse";
 				}
 				if (csel3s1.getId() == 0) {
 					
@@ -352,7 +352,7 @@ public class Manage_CSE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("cseL3S1Form", true);
-				return "page2";
+				return "mcse";
 			
 			
 			}
@@ -371,7 +371,7 @@ public class Manage_CSE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("cseL3S2Form", true);
-					return "page2";
+					return "mcse";
 				}
 				if (csel3s2.getId() == 0) {
 					
@@ -414,7 +414,7 @@ public class Manage_CSE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("cseL3S2Form", true);
-				return "page2";
+				return "mcse";
 			
 			
 			}
@@ -433,7 +433,7 @@ public class Manage_CSE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("cseL4S1Form", true);
-					return "page2";
+					return "mcse";
 				}
 				if (csel4s1.getId() == 0) {
 					
@@ -476,7 +476,7 @@ public class Manage_CSE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("cseL4S1Form", true);
-				return "page2";
+				return "mcse";
 			
 			
 			}
@@ -495,7 +495,7 @@ public class Manage_CSE {
 				if (bindingResult.hasErrors()) {
 					model.addAttribute("message", "Failed your operation !");
 					model.addAttribute("cseL4S2Form", true);
-					return "page2";
+					return "mcse";
 				}
 				if (csel4s2.getId() == 0) {
 					
@@ -536,7 +536,7 @@ public class Manage_CSE {
 				}
 				model.addAttribute("message", "Operation has been completed successfully !");
 				model.addAttribute("cseL4S2Form", true);
-				return "page2";
+				return "mcse";
 			
 			
 			}
